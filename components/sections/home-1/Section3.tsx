@@ -4,6 +4,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import SwiperPadding from "@/components/elements/BoxSwiperPadding";
 import Link from "next/link";
 import { useLocale } from "next-intl";
+import type { news as newsType } from "@/services/apiServices";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -46,8 +47,10 @@ const swiperOptions = {
   },
 };
 
-export default function Section3() {
+export default function Section3({ news }: { news?: newsType[] }) {
   const locale = useLocale();
+
+  console.log(news);
 
   return (
     <>
@@ -88,147 +91,55 @@ export default function Section3() {
               data-aos-delay={300}
             >
               {/* single slider box */}
-              <SwiperSlide
-                className="vl-single-service-box"
-                data-background=".//assets/img/service/vl-service-thumb1.1.png"
-              >
-                <div className="vl-service-icon-box">
-                  <div className="icon">
-                    <span className="icon1">
-                      <img
-                        src="/assets/img/icons/vl-service-icon-1.1.svg"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div className="content">
-                    <h4 className="title pt-24">
-                      <Link href="/service-single">
-                        {locale === "en"
-                          ? "Restorative Solutions"
-                          : "الحلول التصالحية"}
-                      </Link>
-                    </h4>
-                    <p className="para pt-16 pb-24">
-                      {locale === "en"
-                        ? "Whether you’re here for routine care or specialized treatment, our is committed to providing gentle, compassionate care."
-                        : "سواء أكنت هنا للحصول على رعاية روتينية أو علاج متخصص، فإن مركزنا ملتزم بتقديم رعاية لطيفة ورحيمة."}
-                    </p>
-                    <Link href="/service-single" className="learnmore">
-                      {locale === "en" ? "Learn More" : "اعرف المزيد"}
-                      <span className="right-arow">
-                        <i className="fa-regular fa-arrow-right" />
+              {news?.map((news) => (
+                <SwiperSlide
+                  key={news.id} // مهم لإزالة التحذيرات
+                  className="vl-single-service-box"
+                  data-background={news?.images?.[0]}
+                  style={{
+                    backgroundImage: `url(${news.images?.[0]})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  <div className="vl-service-icon-box">
+                    <div className="icon">
+                      <span className="icon1">
+                        <img
+                          src="/assets/img/icons/vl-service-icon-1.1.svg"
+                          alt=""
+                        />
                       </span>
-                    </Link>
-                  </div>
-                </div>
-              </SwiperSlide>
-              {/* single slider box */}
-              <SwiperSlide
-                className="vl-single-service-box"
-                data-background=".//assets/img/service/vl-service-thumb1.2.png"
-              >
-                <div className="vl-service-icon-box">
-                  <div className="icon">
-                    <span className="icon1">
-                      <img
-                        src="/assets/img/icons/vl-service-icon-1.2.svg"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div className="content">
-                    <h4 className="title pt-24">
-                      <Link href="/service-single">
-                        {locale === "en" ? "Periodontal Therapy" : "علاج اللثة"}
+                    </div>
+                    <div className="content">
+                      <h4 className="title pt-24">
+                        <Link href="/service-single">
+                          {locale === "en" ? news.title_en : news.title_ar}
+                        </Link>
+                      </h4>
+                      <div
+                        className="para pt-16 pb-24 "
+                        dangerouslySetInnerHTML={{
+                          __html:
+                            (locale === "en"
+                              ? news.content_en
+                              : news.content_ar
+                            )
+                              ?.split(" ")
+                              .slice(0, 20)
+                              .join(" ") + "...",
+                        }}
+                      ></div>
+                      <Link href="/service-single" className="learnmore">
+                        {locale === "en" ? "Learn More" : "اعرف المزيد"}
+                        <span className="right-arow">
+                          <i className="fa-regular fa-arrow-right" />
+                        </span>
                       </Link>
-                    </h4>
-                    <p className="para pt-16 pb-24">
-                      {locale === "en"
-                        ? "For a younger patients, Pediatric Dentistry offers a comfortable and fun environment, helping children build healthy habits."
-                        : "للمرضى الأصغر سنًا، يوفر طب أسنان الأطفال بيئة مريحة وممتعة، تساعد الأطفال على بناء عادات صحية."}
-                    </p>
-                    <Link href="/service-single" className="learnmore">
-                      {locale === "en" ? "Learn More" : "اعرف المزيد"}
-                      <span className="right-arow">
-                        <i className="fa-regular fa-arrow-right" />
-                      </span>
-                    </Link>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-              {/* single slider box */}
-              <SwiperSlide
-                className="vl-single-service-box"
-                data-background=".//assets/img/service/vl-service-thumb1.3.png"
-              >
-                <div className="vl-service-icon-box">
-                  <div className="icon">
-                    <span className="icon1">
-                      <img
-                        src="/assets/img/icons/vl-service-icon-1.3.svg"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div className="content">
-                    <h4 className="title pt-24">
-                      <Link href="/service-single">
-                        {locale === "en"
-                          ? "Pediatric Dentistry"
-                          : "طب أسنان الأطفال"}
-                      </Link>
-                    </h4>
-                    <p className="para pt-16 pb-24">
-                      {locale === "en"
-                        ? "Our Cosmetic Dentistry options, including whitening & veneers, are crafted enhance your confidence with a radiant, beautiful."
-                        : "خيارات طب الأسنان التجميلي لدينا، بما في ذلك التبييض والقشور، مصممة لتعزيز ثقتك بنفسك بابتسامة مشرقة وجميلة."}
-                    </p>
-                    <Link href="/service-single" className="learnmore">
-                      {locale === "en" ? "Learn More" : "اعرف المزيد"}
-                      <span className="right-arow">
-                        <i className="fa-regular fa-arrow-right" />
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </SwiperSlide>
-              {/* single slider box */}
-              <SwiperSlide
-                className="vl-single-service-box"
-                data-background=".//assets/img/service/vl-service-thumb1.1.png"
-              >
-                <div className="vl-service-icon-box">
-                  <div className="icon">
-                    <span className="icon1">
-                      <img
-                        src="/assets/img/icons/vl-service-icon-1.1.svg"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div className="content">
-                    <h4 className="title pt-24">
-                      <Link href="/service-single">
-                        {locale === "en"
-                          ? "Restorative Solutions"
-                          : "الحلول التصالحية"}
-                      </Link>
-                    </h4>
-                    <p className="para pt-16 pb-24">
-                      {locale === "en"
-                        ? "Whether you’re here for routine care or specialized treatment, our is committed to providing gentle, compassionate care."
-                        : "سواء أكنت هنا للحصول على رعاية روتينية أو علاج متخصص، فإن مركزنا ملتزم بتقديم رعاية لطيفة ورحيمة."}
-                    </p>
-                    <Link href="/service-single" className="learnmore">
-                      {locale === "en" ? "Learn More" : "اعرف المزيد"}
-                      <span className="right-arow">
-                        <i className="fa-regular fa-arrow-right" />
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
+              ))}
             </Swiper>
             <div className="owl-nav">
               <button className="owl-prev">

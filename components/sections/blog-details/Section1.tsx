@@ -3,7 +3,20 @@ import { useState } from "react";
 import "@/node_modules/react-modal-video/css/modal-video.css";
 import ModalVideo from "react-modal-video";
 import Link from "next/link";
-import type { blogs as BlogType } from "@/services/apiBlog";
+import { useLocale } from "next-intl";
+
+interface blogs {
+  title_ar: string;
+  title_en: string;
+  author?: string;
+  content_ar: string;
+  content_en: string;
+  images?: string[];
+  yt_code?: string;
+  created_at?: string;
+  id?: string;
+  user_id?: string;
+}
 
 export default function Section1({
   left,
@@ -12,9 +25,10 @@ export default function Section1({
 }: {
   left?: boolean;
   single?: boolean;
-  details?: BlogType[];
+  details?: blogs;
 }) {
   const [isOpen, setOpen] = useState(false);
+  const locale = useLocale();
 
   console.log(details);
   return (
@@ -249,7 +263,7 @@ export default function Section1({
                   </Link>
                 </div>
                 {/* social widget */}
-                <div className="vl-widegt-4 vl-off-white-bg mb-30">
+                {/* <div className="vl-widegt-4 vl-off-white-bg mb-30">
                   <h4 className="title pb-24">Follow Us</h4>
                   <div className="vl-sidebar-social">
                     <ul>
@@ -283,7 +297,7 @@ export default function Section1({
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div
@@ -300,7 +314,7 @@ export default function Section1({
                 <div className="vl-blog-large-thumb-iner mb-32">
                   <img
                     className="w-100 br-8"
-                    src="/assets/img/blog/vl-blog-large-thumb1.1.png"
+                    src={details?.images?.[0]}
                     alt=""
                   />
                 </div>
@@ -308,75 +322,24 @@ export default function Section1({
                 <div className="vl-blog-meta-list">
                   <ul>
                     <li>
-                      <Link href="#">
-                        <span>
-                          <img
-                            className="auth-thumb"
-                            src="/assets/img/team/auth-meta1.1.png"
-                            alt=""
-                          />
-                        </span>
-                        Adil Rashid
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <span>
-                          <img
-                            className="icon"
-                            src="/assets/img/icons/vl-blog-details-date-icon1.1.svg"
-                            alt=""
-                          />
-                        </span>
-                        8/10/2025
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <span>
-                          <img
-                            className="icon"
-                            src="/assets/img/icons/vl-tag-1.1.svg"
-                            alt=""
-                          />
-                        </span>
-                        Dental &amp; Dentist Clinic
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <span>
-                          <img
-                            className="icon"
-                            src="/assets/img/icons/vl-chat1.1.svg"
-                            alt=""
-                          />
-                        </span>
-                        2 Comments
-                      </Link>
+                      <Link href="#">{details?.author}</Link>
                     </li>
                   </ul>
                 </div>
                 {/* content one */}
                 <div className="vl-sidebar-conten2t mb-32">
-                  <h3 className="title">
-                    Dental Implants vs. Dentures: Which <br /> is Right for You?
-                  </h3>
-                  <p className="para pt-16">
-                    Welcome to our blog, where we share valuable insights,
-                    expert tips, &amp; the latest updates in dental care. At we
-                    believe in empowering our patients with knowledge make
-                    informed decisions about their health. Whether you’re
-                    curious about preventive care, interested.
-                  </p>
-                  <p className="para pt-16">
-                    Explore topics ranging from everyday oral hygiene tips to
-                    advanced treatment options, all designed to help you achieve
-                    a healthy, confident smile stay connected for regular.
-                  </p>
+                  <div
+                    className="para"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        locale === "en"
+                          ? details?.content_en || ""
+                          : details?.content_ar || "",
+                    }}
+                  ></div>
                 </div>
                 {/* icon block */}
-                <div className="row">
+                {/* <div className="row">
                   <div className="col-lg-6 col-md-6 mb-30">
                     <div className="vl-deatils-icon-block-flex">
                       <div className="icon">
@@ -415,20 +378,9 @@ export default function Section1({
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* content one */}
-                <div className="vl-sidebar-conten1t mb-32">
-                  <h3 className="title">
-                    Comprehensive Dental Care for Every Need
-                  </h3>
-                  <p className="para pt-16">
-                    We understand that staying informed about your oral health
-                    essential. Our blog provides helpful articles on everything
-                    from preventive care to the latest advancements dentistry.
-                    Whether you’re looking for tips on improving your daily oral
-                    hygiene routine or exploring.
-                  </p>
-                </div>
+
                 {/* check box */}
                 {/* <div className="row">
                   <div className="col-lg-12 mb-16">
@@ -476,32 +428,39 @@ export default function Section1({
                 </div> */}
                 {/* video thumb area */}
                 <div className="row">
-                  <div className="col-lg-6 col-md-6 mb-30">
-                    <div className="vl-blog-sm-thumb">
-                      <img
-                        className="w-100"
-                        src="/assets/img/blog/vl-blog-sm-thumb-1.1.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 mb-30">
-                    <div className="vl-service-video-thum2b p-relative">
-                      <img
-                        className="w-100 br-8"
-                        src="/assets/img/blog/vl-blog-sm-video-thumb-1.2.png"
-                        alt=""
-                      />
-                      <div
-                        className="popup-video vl-play-btn"
-                        onClick={() => setOpen(true)}
-                      >
-                        <span>
-                          <i className="fa-solid fa-play" />
-                        </span>
+                  {Array.isArray(details?.images) &&
+                    details.images.length > 1 && (
+                      <div className="vl-blog-sm-thumb grid grid-cols-2 md:grid-cols-3 gap-3">
+                        {details.images.map((image, index) => (
+                          <img
+                            key={index}
+                            className="w-full rounded-lg shadow"
+                            src={image}
+                            alt={`Blog image ${index + 1}`}
+                          />
+                        ))}
+                      </div>
+                    )}
+
+                  {details?.yt_code && (
+                    <div className="col-lg-12 col-md-12 mb-30">
+                      <div className="vl-service-video-thum2b p-relative">
+                        <img
+                          className="w-100 br-8"
+                          src="/assets/img/blog/vl-blog-sm-video-thumb-1.2.png"
+                          alt=""
+                        />
+                        <div
+                          className="popup-video vl-play-btn"
+                          onClick={() => setOpen(true)}
+                        >
+                          <span>
+                            <i className="fa-solid fa-play" />
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -509,12 +468,14 @@ export default function Section1({
         </div>
       </section>
       {/*================= Blog Details section End =================*/}
-      <ModalVideo
-        channel="youtube"
-        videoId="wn_wKQ_UR90"
-        isOpen={isOpen}
-        onClose={() => setOpen(false)}
-      />
+      {details?.yt_code && (
+        <ModalVideo
+          channel="youtube"
+          videoId={details?.yt_code}
+          isOpen={isOpen}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </>
   );
 }

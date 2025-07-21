@@ -2,7 +2,9 @@
 import Link from "next/link";
 import blogData from "@/public/data/blogmore.json";
 import { useLocale } from "next-intl";
-export default function Section8() {
+import type { blogs as BlogType } from "@/services/apiBlog";
+
+export default function Section8({ blogs }: { blogs?: BlogType[] }) {
   const currentBlog = blogData.blogs;
 
   const locale = useLocale();
@@ -32,7 +34,7 @@ export default function Section8() {
             </div>
           </div>
           <div className="row">
-            {currentBlog.map((blogs, index) => (
+            {blogs?.map((blog, index) => (
               <div className="col-lg-4 col-md-6 mb-30" key={index}>
                 {/* single blog box */}
                 <div className="vl-single-blog-box">
@@ -40,8 +42,8 @@ export default function Section8() {
                     <Link href="/blog-single">
                       <img
                         className="w-100"
-                        src={blogs.image}
-                        alt={blogs.link}
+                        src={blog.images?.[0]}
+                        alt={blog.title_en}
                       />
                     </Link>
                   </div>
@@ -62,26 +64,28 @@ export default function Section8() {
                         </cite>
                         {blogs.date}
                       </Link> */}
-                      <Link href="#">
-                        <cite
-                          className={
-                            locale === "en"
-                              ? "meta-icon mr-6"
-                              : "meta-icon ml-6"
-                          }
-                        >
-                          <img
-                            src="/assets/img/icons/vl-blog-user1.1.svg"
-                            alt=""
-                          />
-                        </cite>
-                        {blogs.author}
-                      </Link>
+
+                      <cite
+                        className={
+                          locale === "en" ? "meta-icon mr-6" : "meta-icon ml-6"
+                        }
+                      >
+                        <img
+                          src="/assets/img/icons/vl-blog-user1.1.svg"
+                          alt=""
+                        />
+                      </cite>
+                      {blog.author}
                     </div>
                     <h3 className="title pt-20 pb-24">
-                      <Link href={blogs.link}>{blogs.title}</Link>
+                      <Link href={`/${locale}/blog/${blog.id}`}>
+                        {locale === "en" ? blog.title_en : blog.title_ar}
+                      </Link>
                     </h3>
-                    <Link href={blogs.link} className="blog-learnmore">
+                    <Link
+                      href={`/${locale}/blog/${blog.id}`}
+                      className="blog-learnmore"
+                    >
                       {locale === "en" ? "Learn more" : "المزيد"}
                       <span>
                         <i className="fa-regular fa-arrow-right" />

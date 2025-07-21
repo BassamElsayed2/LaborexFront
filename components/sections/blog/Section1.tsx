@@ -13,7 +13,13 @@ interface BlogMember {
   link: string;
 }
 
-export default function Section1({ blogs }: { blogs?: BlogType[] }) {
+export default function Section1({
+  blogs,
+  service = false,
+}: {
+  blogs?: BlogType[];
+  service: boolean;
+}) {
   const [blog, setBlog] = useState<BlogMember[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -56,22 +62,47 @@ export default function Section1({ blogs }: { blogs?: BlogType[] }) {
                     </Link>
                   </div>
                   <div className="vl-blog-content">
-                    <div className="vl-blog-meta">
-                      <cite className="meta-icon mr-6">
-                        <img
-                          src="/assets/img/icons/vl-blog-user1.1.svg"
-                          alt=""
-                        />
-                      </cite>
-                      {blogs.author}
-                    </div>
+                    {!service && (
+                      <div className="vl-blog-meta">
+                        <cite className="meta-icon mr-6">
+                          <img
+                            src="/assets/img/icons/vl-blog-user1.1.svg"
+                            alt=""
+                          />
+                        </cite>
+                        {blogs.author}
+                      </div>
+                    )}
                     <h3 className="title pt-20 pb-24">
-                      <Link href={`/${locale}/blog/${blogs.id}` || ""}>
+                      <Link
+                        href={
+                          `/${locale}/${service ? "service" : "blog"}/${
+                            blogs.id
+                          }` || ""
+                        }
+                      >
                         {locale === "en" ? blogs.title_en : blogs.title_ar}
                       </Link>
                     </h3>
+                    <div
+                      className="para pt-16 pb-24 "
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          (locale === "en"
+                            ? blogs.content_en
+                            : blogs.content_ar
+                          )
+                            ?.split(" ")
+                            .slice(0, 20)
+                            .join(" ") + "...",
+                      }}
+                    ></div>
                     <Link
-                      href={`/${locale}/blog/${blogs.id}` || ""}
+                      href={
+                        `/${locale}/${service ? "service" : "blog"}/${
+                          blogs.id
+                        }` || ""
+                      }
                       className="blog-learnmore"
                     >
                       {locale === "en" ? "Learn more" : "المزيد"}

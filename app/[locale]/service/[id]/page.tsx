@@ -8,6 +8,7 @@ import Section2 from "@/components/sections/blog-details/Section2";
 import { useParams } from "next/navigation";
 import { getBlogsById } from "@/services/apiBlog";
 import { useQuery } from "@tanstack/react-query";
+import { getNewsById } from "@/services/apiServices";
 
 export default function Home() {
   const params = useParams();
@@ -15,7 +16,7 @@ export default function Home() {
 
   const { data: blogDetails, isLoading: isLoadingPost } = useQuery({
     queryKey: ["news", id],
-    queryFn: () => getBlogsById(id),
+    queryFn: () => getNewsById(id),
     enabled: !!id,
   });
 

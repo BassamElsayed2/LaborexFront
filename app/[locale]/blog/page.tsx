@@ -8,11 +8,9 @@ import { getBlog } from "@/services/apiBlog";
 import { useQuery } from "@tanstack/react-query";
 export default function Home() {
   const { data: blogs } = useQuery({
-    queryKey: ["news"],
+    queryKey: ["blog"],
     queryFn: getBlog,
   });
-
-  console.log(blogs);
 
   return (
     <>
@@ -25,7 +23,7 @@ export default function Home() {
           pageGroup=""
           current="Our Blog"
         />
-        <Section1 blogs={blogs} />
+        <Section1 blogs={blogs} service={false} />
         <Section9 />
       </Layout>
     </>
