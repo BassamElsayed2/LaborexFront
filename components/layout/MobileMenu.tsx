@@ -45,7 +45,7 @@ export default function MobileMenu({
           <div className="vl-offcanvas-header d-flex justify-content-between align-items-center mb-40">
             <div className="vl-offcanvas-logo">
               <Link href="/">
-                <img src="assets/img/logo/vl-logo-1.1.png" alt="" />
+                <img src="/assets/img/logo/vl-logo-1.1.png" alt="" />
               </Link>
             </div>
             <div className="vl-offcanvas-close">
@@ -75,8 +75,13 @@ export default function MobileMenu({
                 </li>
 
                 <li>
-                  <Link href="#blog" onClick={() => handleAccordion(4)}>
-                    {locale === "en" ? "Blog" : "مدونة"}
+                  <Link href="/service" onClick={() => handleAccordion(4)}>
+                    {locale === "en" ? "Services" : "الخدمات"}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog" onClick={() => handleAccordion(4)}>
+                    {locale === "en" ? "Blog" : "المقالات"}
                   </Link>
                 </li>
                 <li>
@@ -96,7 +101,7 @@ export default function MobileMenu({
             <span>
               <Link href="#">
                 <span className="ml-5">
-                  <img src="assets/img/icons/vl-footer-icon-1.1.svg" alt="" />
+                  <img src="/assets/img/icons/vl-footer-icon-1.1.svg" alt="" />
                 </span>
                 +57 9954 6476
               </Link>
@@ -105,7 +110,7 @@ export default function MobileMenu({
             <span>
               <Link href="#">
                 <span className="ml-5">
-                  <img src="assets/img/icons/vl-footer-icon-1.3.svg" alt="" />
+                  <img src="/assets/img/icons/vl-footer-icon-1.3.svg" alt="" />
                 </span>
                 dentistsolution@com
               </Link>
@@ -114,7 +119,7 @@ export default function MobileMenu({
             <span>
               <Link href="#">
                 <span className="ml-5">
-                  <img src="assets/img/icons/vl-footer-icon-1.2.svg" alt="" />
+                  <img src="/assets/img/icons/vl-footer-icon-1.2.svg" alt="" />
                 </span>
                 421 Allen, Mexico 4233
               </Link>

@@ -1,23 +1,47 @@
+import { useLocale } from "next-intl";
 import Link from "next/link";
 
-export default function SectionHeader({ title, current, isGroup, linkGroup, pageGroup }: { title: string; current: string; isGroup: boolean; linkGroup: string; pageGroup: string }) {
+export default function SectionHeader({
+  title_en,
+  title_ar,
+  current,
+  isGroup,
+  linkGroup,
+  pageGroup,
+}: {
+  title_en: string;
+  title_ar: string;
+  current: string;
+  isGroup: boolean;
+  linkGroup: string;
+  pageGroup: string;
+}) {
+  const locale = useLocale();
+
   return (
     <>
       {/*================= Breadcrumb section start =================*/}
-      <section className="vl-breadcrumb-area" data-background="assets/img/breadcrumb/vl-about-breadcrumb.png">
+      <section
+        className="vl-breadcrumb-area"
+        data-background="/assets/img/breadcrumb/vl-about-breadcrumb.png"
+      >
         <div className="container">
           <div className="vl-breadcrumb-content">
-            <h2 className="title">{title}</h2>
+            <h2 className="title">{locale === "en" ? title_en : title_ar}</h2>
             <div className="vl-breadcrumb-list">
               <ul>
                 <li>
-                  <Link href="/">Home</Link>
+                  <Link href="/">{locale === "en" ? "Home" : "الرئيسية"}</Link>
                 </li>
 
                 <li>
                   <Link href="#">
                     <span>
-                      <i className="fa-regular fa-angle-right" />
+                      {locale === "en" ? (
+                        <i className="fa-regular fa-angle-right" />
+                      ) : (
+                        <i className="fa-regular fa-angle-left" />
+                      )}
                     </span>
                   </Link>
                 </li>
@@ -35,8 +59,8 @@ export default function SectionHeader({ title, current, isGroup, linkGroup, page
                 </li>
 
                 <li>
-                  <Link href="#" className="active">
-                    {current}
+                  <Link href="#" className="active mr-2">
+                    {locale === "en" ? title_en : title_ar}
                   </Link>
                 </li>
               </ul>

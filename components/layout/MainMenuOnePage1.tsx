@@ -10,15 +10,14 @@ export default function MainMenu() {
         <Link href="#about">{locale === "en" ? "About us" : "عنا"}</Link>
       </li>
       <li>
-        <Link href="#service">{locale === "en" ? "Services" : "الخدمات"}</Link>
+        <Link href="/service">{locale === "en" ? "Services" : "الخدمات"}</Link>
+      </li>
+
+      <li>
+        <Link href="/blog">{locale === "en" ? "Blog" : "المقالات"}</Link>
       </li>
       <li>
-        <Link href="#contact">
-          {locale === "en" ? "Contact" : "الاتصال بنا"}
-        </Link>
-      </li>
-      <li>
-        <Link href="#blog">{locale === "en" ? "Blog" : "المدونة"}</Link>
+        <Link href="#contact">{locale === "en" ? "Contact" : "اتصل بنا"}</Link>
       </li>
       <li>
         <Link href={`/${locale}/branches`}>

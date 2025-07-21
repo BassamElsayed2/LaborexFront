@@ -90,13 +90,13 @@ export default function Section3() {
               {/* single slider box */}
               <SwiperSlide
                 className="vl-single-service-box"
-                data-background="./assets/img/service/vl-service-thumb1.1.png"
+                data-background=".//assets/img/service/vl-service-thumb1.1.png"
               >
                 <div className="vl-service-icon-box">
                   <div className="icon">
                     <span className="icon1">
                       <img
-                        src="assets/img/icons/vl-service-icon-1.1.svg"
+                        src="/assets/img/icons/vl-service-icon-1.1.svg"
                         alt=""
                       />
                     </span>
@@ -126,13 +126,13 @@ export default function Section3() {
               {/* single slider box */}
               <SwiperSlide
                 className="vl-single-service-box"
-                data-background="./assets/img/service/vl-service-thumb1.2.png"
+                data-background=".//assets/img/service/vl-service-thumb1.2.png"
               >
                 <div className="vl-service-icon-box">
                   <div className="icon">
                     <span className="icon1">
                       <img
-                        src="assets/img/icons/vl-service-icon-1.2.svg"
+                        src="/assets/img/icons/vl-service-icon-1.2.svg"
                         alt=""
                       />
                     </span>
@@ -160,13 +160,13 @@ export default function Section3() {
               {/* single slider box */}
               <SwiperSlide
                 className="vl-single-service-box"
-                data-background="./assets/img/service/vl-service-thumb1.3.png"
+                data-background=".//assets/img/service/vl-service-thumb1.3.png"
               >
                 <div className="vl-service-icon-box">
                   <div className="icon">
                     <span className="icon1">
                       <img
-                        src="assets/img/icons/vl-service-icon-1.3.svg"
+                        src="/assets/img/icons/vl-service-icon-1.3.svg"
                         alt=""
                       />
                     </span>
@@ -196,13 +196,13 @@ export default function Section3() {
               {/* single slider box */}
               <SwiperSlide
                 className="vl-single-service-box"
-                data-background="./assets/img/service/vl-service-thumb1.1.png"
+                data-background=".//assets/img/service/vl-service-thumb1.1.png"
               >
                 <div className="vl-service-icon-box">
                   <div className="icon">
                     <span className="icon1">
                       <img
-                        src="assets/img/icons/vl-service-icon-1.1.svg"
+                        src="/assets/img/icons/vl-service-icon-1.1.svg"
                         alt=""
                       />
                     </span>

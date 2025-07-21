@@ -6,8 +6,15 @@ import SectionHeader from "@/components/layout/SectionHeader";
 export default function Home() {
   return (
     <>
-      <Layout>
-        <SectionHeader title="Our Service Details" isGroup={true} linkGroup="/service" pageGroup="Our Service" current="Our Service Details" />
+      <Layout mainMenuStyle="one-page">
+        <SectionHeader
+          title_en="Our Service Details"
+          title_ar="تفاصيل الخدمة التي نقدمها"
+          isGroup={false}
+          linkGroup="/service"
+          pageGroup="Our Service"
+          current="Our Service Details"
+        />
         <Section1 single={true} />
         <Section2 />
         <Section9 />

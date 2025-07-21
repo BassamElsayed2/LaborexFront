@@ -10,7 +10,10 @@ export default function Section1() {
             {/* single pricing box */}
             <div className="col-lg-4 col-md-6 mb-30">
               <div className="vl-pricie-bo4x-iner">
-                <div className="vl-pricie-box-price" data-background="./assets/img/shape/vl-pricing-box-iner-bg.svg">
+                <div
+                  className="vl-pricie-box-price"
+                  data-background=".//assets/img/shape/vl-pricing-box-iner-bg.svg"
+                >
                   <h4 className="price">
                     <span>$</span>40
                   </h4>
@@ -66,7 +69,10 @@ export default function Section1() {
             {/* single pricing box */}
             <div className="col-lg-4 col-md-6 mb-30">
               <div className="vl-pricie-bo4x-iner active">
-                <div className="vl-pricie-box-price" data-background="./assets/img/shape/vl-price-heading-bg.svg">
+                <div
+                  className="vl-pricie-box-price"
+                  data-background=".//assets/img/shape/vl-price-heading-bg.svg"
+                >
                   <h4 className="price">
                     <span>$</span>60
                   </h4>
@@ -121,7 +127,10 @@ export default function Section1() {
             </div>
             <div className="col-lg-4 col-md-6 mb-30">
               <div className="vl-pricie-bo4x-iner">
-                <div className="vl-pricie-box-price" data-background="./assets/img/shape/vl-pricing-box-iner-bg.svg">
+                <div
+                  className="vl-pricie-box-price"
+                  data-background=".//assets/img/shape/vl-pricing-box-iner-bg.svg"
+                >
                   <h4 className="price">
                     <span>$</span>90
                   </h4>

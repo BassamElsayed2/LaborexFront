@@ -14,7 +14,10 @@ const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 1,
   spaceBetween: 0,
-  autoplay: false,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -44,13 +47,13 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background="./assets/img/banner/vl-banner-1.1.png"
+              data-background=".//assets/img/banner/vl-banner-1.1.png"
             >
               <div className="shape shape-1">
-                <img src="assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
+                <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
               </div>
               <div className="shap3e circle">
-                <img src="assets/img/shape/vl-star-shape-1.1.svg" alt="" />
+                <img src="/assets/img/shape/vl-star-shape-1.1.svg" alt="" />
               </div>
               <div className="container">
                 <div className="row">
@@ -98,7 +101,7 @@ export default function Section1() {
                   <div className="col-lg-6 p-relative">
                     <div className="video-shape">
                       <img
-                        src="assets/img/banner/vl-popup-video-thumb.png"
+                        src="/assets/img/banner/vl-popup-video-thumb.png"
                         alt=""
                       />
                       <div className="play-button-container">
@@ -125,13 +128,13 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background="./assets/img/banner/vl-banner-1.1.png"
+              data-background=".//assets/img/banner/vl-banner-1.1.png"
             >
               <div className="shape shape-1">
-                <img src="assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
+                <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
               </div>
               <div className="shap3e circle">
-                <img src="assets/img/shape/vl-star-shape-1.1.svg" alt="" />
+                <img src="/assets/img/shape/vl-star-shape-1.1.svg" alt="" />
               </div>
               <div className="container">
                 <div className="row">
@@ -179,7 +182,7 @@ export default function Section1() {
                   <div className="col-lg-6 p-relative">
                     <div className="video-shape">
                       <img
-                        src="assets/img/banner/vl-popup-video-thumb.png"
+                        src="/assets/img/banner/vl-popup-video-thumb.png"
                         alt=""
                       />
                       <div className="play-button-container">
@@ -206,13 +209,13 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background="./assets/img/banner/vl-banner-1.1.png"
+              data-background=".//assets/img/banner/vl-banner-1.1.png"
             >
               <div className="shape shape-1">
-                <img src="assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
+                <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
               </div>
               <div className="shap3e circle">
-                <img src="assets/img/shape/vl-star-shape-1.1.svg" alt="" />
+                <img src="/assets/img/shape/vl-star-shape-1.1.svg" alt="" />
               </div>
               <div className="container">
                 <div className="row">
@@ -260,7 +263,7 @@ export default function Section1() {
                   <div className="col-lg-6 p-relative">
                     <div className="video-shape">
                       <img
-                        src="assets/img/banner/vl-popup-video-thumb.png"
+                        src="/assets/img/banner/vl-popup-video-thumb.png"
                         alt=""
                       />
                       <div className="play-button-container">

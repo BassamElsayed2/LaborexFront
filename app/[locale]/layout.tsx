@@ -12,6 +12,8 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 
+import QueryProvider from "@/util/QueryProvider";
+
 const figtree = Figtree({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
@@ -40,7 +42,9 @@ export default async function RootLayout(props: {
   return (
     <html lang={locale} dir={direction}>
       <body className={figtree.className}>
-        <NextIntlClientProvider>{props.children}</NextIntlClientProvider>
+        <QueryProvider>
+          <NextIntlClientProvider>{props.children}</NextIntlClientProvider>
+        </QueryProvider>
       </body>
     </html>
   );

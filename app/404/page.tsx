@@ -6,7 +6,14 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <SectionHeader title="404 Error" isGroup={false} linkGroup="" pageGroup="" current="404 Error" />
+        <SectionHeader
+          title_en="404 Error"
+          title_ar="404 Error"
+          isGroup={false}
+          linkGroup=""
+          pageGroup=""
+          current="404 Error"
+        />
         <Section1 />
         <Section9 />
       </Layout>

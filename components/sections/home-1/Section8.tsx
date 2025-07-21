@@ -56,7 +56,7 @@ export default function Section8() {
                           }
                         >
                           <img
-                            src="assets/img/icons/vl-date-icon-1.1.svg"
+                            src="/assets/img/icons/vl-date-icon-1.1.svg"
                             alt=""
                           />
                         </cite>
@@ -71,7 +71,7 @@ export default function Section8() {
                           }
                         >
                           <img
-                            src="assets/img/icons/vl-blog-user1.1.svg"
+                            src="/assets/img/icons/vl-blog-user1.1.svg"
                             alt=""
                           />
                         </cite>

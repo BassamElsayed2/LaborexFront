@@ -55,22 +55,26 @@ export default function Section4() {
               </div>
             </div>
             <div className="col-lg-8">
-              <Swiper {...swiperOptions} id="brand-active" className="p-relative owl-carousel owl-theme">
+              <Swiper
+                {...swiperOptions}
+                id="brand-active"
+                className="p-relative owl-carousel owl-theme"
+              >
                 {/* single brand item */}
                 <SwiperSlide className="vl-single-brand-item">
-                  <img src="assets/img/brand/vl-brand-1.1.png" alt="" />
+                  <img src="/assets/img/brand/vl-brand-1.1.png" alt="" />
                 </SwiperSlide>
                 {/* single brand item */}
                 <SwiperSlide className="vl-single-brand-item">
-                  <img src="assets/img/brand/vl-brand-1.2.png" alt="" />
+                  <img src="/assets/img/brand/vl-brand-1.2.png" alt="" />
                 </SwiperSlide>
                 {/* single brand item */}
                 <SwiperSlide className="vl-single-brand-item">
-                  <img src="assets/img/brand/vl-brand-1.3.png" alt="" />
+                  <img src="/assets/img/brand/vl-brand-1.3.png" alt="" />
                 </SwiperSlide>
                 {/* single brand item */}
                 <SwiperSlide className="vl-single-brand-item">
-                  <img src="assets/img/brand/vl-brand-1.2.png" alt="" />
+                  <img src="/assets/img/brand/vl-brand-1.2.png" alt="" />
                 </SwiperSlide>
               </Swiper>
             </div>

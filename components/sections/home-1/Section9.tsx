@@ -10,10 +10,13 @@ export default function Section9() {
         <div className="container">
           <div
             className="vl-cta-bg"
-            data-background="./assets/img/cta/vl-cta-bg-1.1.png"
+            data-background="/assets/img/cta/vl-cta-bg-1.1.png"
           >
             <div className="vl-line-shape">
-              <img src="assets/img/shape/cta-left-arrow-shape-1.1.svg" alt="" />
+              <img
+                src="/assets/img/shape/cta-left-arrow-shape-1.1.svg"
+                alt=""
+              />
             </div>
             <div className="row">
               <div className="col-lg-5" />
@@ -49,7 +52,7 @@ export default function Section9() {
                   <div className="shape-thumb">
                     <img
                       className="circle"
-                      src="assets/img/shape/vl-star-shape-1.1.svg"
+                      src="/assets/img/shape/vl-star-shape-1.1.svg"
                       alt=""
                     />
                   </div>

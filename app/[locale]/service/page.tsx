@@ -7,11 +7,18 @@ import Section9 from "@/components/sections/home-1/Section9";
 export default function Home() {
   return (
     <>
-      <Layout>
-        <SectionHeader title="Our Service" current="Our Service" isGroup={false} linkGroup="" pageGroup="" />
+      <Layout mainMenuStyle="one-page">
+        <SectionHeader
+          title_en="Our Service"
+          title_ar="خدمة"
+          current="Our Service"
+          isGroup={false}
+          linkGroup=""
+          pageGroup=""
+        />
         <Section1 />
         <Section1Service background="vl-off-white-bg" />
-        <Section2 />
+        {/* <Section2 /> */}
         <Section9 />
       </Layout>
     </>

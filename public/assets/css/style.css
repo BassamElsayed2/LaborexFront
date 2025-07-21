@@ -9648,6 +9648,15 @@ textarea {
 .vl-line-shape {
   position: absolute;
 }
+
+[dir="rtl"] .vl-line-shape {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
 .vl-line-shape img {
   height: 100%;
   width: 100%;
@@ -12392,7 +12401,7 @@ div#banner-slid1e {
   top: -19px;
   height: 67px;
   width: 2px;
-  background-image: url(/assets/img/shape/vl-line-border4.1.svg);
+  background-image: url(//assets/img/shape/vl-line-border4.1.svg);
   transform: rotate(90deg);
 }
 
@@ -12403,7 +12412,7 @@ div#banner-slid1e {
   top: -22px;
   height: 67px;
   width: 2px;
-  background-image: url(/assets/img/shape/vl-line-border4.1.svg);
+  background-image: url(//assets/img/shape/vl-line-border4.1.svg);
   transform: rotate(270deg);
 }
 

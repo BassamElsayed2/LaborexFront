@@ -13,7 +13,10 @@ export default function Section2() {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="vl-pricinb-bo2x-heading">
-                      <div className="vl-pricie-box-price" data-background="./assets/img/shape/vl-pricing-box-iner-bg.svg">
+                      <div
+                        className="vl-pricie-box-price"
+                        data-background=".//assets/img/shape/vl-pricing-box-iner-bg.svg"
+                      >
                         <h4 className="price">
                           <span>$</span>40
                         </h4>
@@ -77,7 +80,10 @@ export default function Section2() {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="vl-pricinb-bo2x-heading">
-                      <div className="vl-pricie-box-price" data-background="./assets/img/shape/vl-price-heading-bg.svg">
+                      <div
+                        className="vl-pricie-box-price"
+                        data-background=".//assets/img/shape/vl-price-heading-bg.svg"
+                      >
                         <h4 className="price">
                           <span>$</span>60
                         </h4>

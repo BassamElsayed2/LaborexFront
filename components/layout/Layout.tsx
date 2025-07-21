@@ -36,14 +36,24 @@ interface LayoutProps {
   offcanvas_menu?: any;
   offcanvas_social?: any;
 }
-export default function Layout({ headerStyle, footerStyle, mainMenuStyle, children, offcanvas_bg, offcanvas_menu, offcanvas_social }: LayoutProps) {
+export default function Layout({
+  headerStyle,
+  footerStyle,
+  mainMenuStyle,
+  children,
+  offcanvas_bg,
+  offcanvas_menu,
+  offcanvas_social,
+}: LayoutProps) {
   const [scroll, setScroll] = useState<boolean>(false);
 
   // Mobile Menu
   const [isMobileMenu, setMobileMenu] = useState<boolean>(false);
   const handleMobileMenu = (): void => {
     setMobileMenu(!isMobileMenu);
-    !isMobileMenu ? document.body.classList.add("mobile-menu-active") : document.body.classList.remove("mobile-menu-active");
+    !isMobileMenu
+      ? document.body.classList.add("mobile-menu-active")
+      : document.body.classList.remove("mobile-menu-active");
   };
 
   useEffect(() => {
@@ -70,11 +80,61 @@ export default function Layout({ headerStyle, footerStyle, mainMenuStyle, childr
     <>
       <div id="top" />
       <BootstrapComponents />
-      {!headerStyle && <Header1 mainMenuStyle={mainMenuStyle} scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} offcanvas_bg={offcanvas_bg} offcanvas_menu={offcanvas_menu} offcanvas_social={offcanvas_social} />}
-      {headerStyle == 1 ? <Header1 mainMenuStyle={mainMenuStyle} scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} offcanvas_bg={offcanvas_bg} offcanvas_menu={offcanvas_menu} offcanvas_social={offcanvas_social} /> : null}
-      {headerStyle == 2 ? <Header2 mainMenuStyle={mainMenuStyle} scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} offcanvas_bg={offcanvas_bg} offcanvas_menu={offcanvas_menu} offcanvas_social={offcanvas_social} /> : null}
-      {headerStyle == 3 ? <Header3 mainMenuStyle={mainMenuStyle} scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} offcanvas_bg={offcanvas_bg} offcanvas_menu={offcanvas_menu} offcanvas_social={offcanvas_social} /> : null}
-      {headerStyle == 4 ? <Header4 mainMenuStyle={mainMenuStyle} scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} offcanvas_bg={offcanvas_bg} offcanvas_menu={offcanvas_menu} offcanvas_social={offcanvas_social} /> : null}
+      {!headerStyle && (
+        <Header1
+          mainMenuStyle={mainMenuStyle}
+          scroll={scroll}
+          isMobileMenu={isMobileMenu}
+          handleMobileMenu={handleMobileMenu}
+          offcanvas_bg={offcanvas_bg}
+          offcanvas_menu={offcanvas_menu}
+          offcanvas_social={offcanvas_social}
+        />
+      )}
+      {headerStyle == 1 ? (
+        <Header1
+          mainMenuStyle={mainMenuStyle}
+          scroll={scroll}
+          isMobileMenu={isMobileMenu}
+          handleMobileMenu={handleMobileMenu}
+          offcanvas_bg={offcanvas_bg}
+          offcanvas_menu={offcanvas_menu}
+          offcanvas_social={offcanvas_social}
+        />
+      ) : null}
+      {headerStyle == 2 ? (
+        <Header2
+          mainMenuStyle={mainMenuStyle}
+          scroll={scroll}
+          isMobileMenu={isMobileMenu}
+          handleMobileMenu={handleMobileMenu}
+          offcanvas_bg={offcanvas_bg}
+          offcanvas_menu={offcanvas_menu}
+          offcanvas_social={offcanvas_social}
+        />
+      ) : null}
+      {headerStyle == 3 ? (
+        <Header3
+          mainMenuStyle={mainMenuStyle}
+          scroll={scroll}
+          isMobileMenu={isMobileMenu}
+          handleMobileMenu={handleMobileMenu}
+          offcanvas_bg={offcanvas_bg}
+          offcanvas_menu={offcanvas_menu}
+          offcanvas_social={offcanvas_social}
+        />
+      ) : null}
+      {headerStyle == 4 ? (
+        <Header4
+          mainMenuStyle={mainMenuStyle}
+          scroll={scroll}
+          isMobileMenu={isMobileMenu}
+          handleMobileMenu={handleMobileMenu}
+          offcanvas_bg={offcanvas_bg}
+          offcanvas_menu={offcanvas_menu}
+          offcanvas_social={offcanvas_social}
+        />
+      ) : null}
 
       <main>{children}</main>
       {!footerStyle && <Footer1 />}

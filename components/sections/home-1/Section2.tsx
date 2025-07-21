@@ -15,7 +15,7 @@ export default function Section2() {
                 <div className="vl-about-radius-thumb reveal image-anime">
                   <img
                     className="w-100"
-                    src="assets/img/about/vl-about-thumb-1.1.png"
+                    src="/assets/img/about/vl-about-thumb-1.1.png"
                     alt=""
                   />
                 </div>
@@ -23,7 +23,7 @@ export default function Section2() {
                   <div className="shape">
                     <img
                       className="circle"
-                      src="assets/img/shape/vl-star-shape-1.2.svg"
+                      src="/assets/img/shape/vl-star-shape-1.2.svg"
                       alt=""
                     />
                   </div>
@@ -73,7 +73,7 @@ export default function Section2() {
               <div className="vl-about-thumb-2 reveal image-anime">
                 <img
                   className="w-100"
-                  src="assets/img/about/vl-about-thumb-1.2.png"
+                  src="/assets/img/about/vl-about-thumb-1.2.png"
                   alt=""
                 />
               </div>

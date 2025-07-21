@@ -29,7 +29,7 @@ export default function Header({
               <div className="col-lg-3 col-md-6 col-6">
                 <div className="vl-logo">
                   <Link href="/">
-                    <img src="assets/img/logo/vl-logo-1.1.png" alt="" />
+                    <img src="/assets/img/logo/vl-logo-1.1.png" alt="" />
                   </Link>
                 </div>
               </div>
@@ -48,7 +48,7 @@ export default function Header({
                     <div className="vl-icon">
                       <span>
                         <img
-                          src="assets/img/icons/vl-header-top-icon-1.1.svg"
+                          src="/assets/img/icons/vl-header-top-icon-1.1.svg"
                           alt=""
                         />
                       </span>
@@ -69,7 +69,7 @@ export default function Header({
                     className="vl-offcanvas-toggle"
                     onClick={() => handleMobileMenu()}
                   >
-                    <img src="assets/img/icons/vl-line-1.1.svg" alt="" />
+                    <img src="/assets/img/icons/vl-line-1.1.svg" alt="" />
                   </button>
                 </div>
               </div>
