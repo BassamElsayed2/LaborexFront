@@ -20,21 +20,14 @@ export default function Section1({
   blogs?: BlogType[];
   service: boolean;
 }) {
-  const [blog, setBlog] = useState<BlogMember[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-
-  useEffect(() => {
-    fetch("../data/blog.json")
-      .then((res) => res.json())
-      .then((data) => setBlog(data));
-  }, []);
 
   // Pagination
   const ITEMS_PER_PAGE = 6;
-  const totalPages = Math.ceil(blog.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil((blogs?.length || 0) / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
-  const currentBlog = blog.slice(startIndex, endIndex);
+  const currentBlog = blogs?.slice(startIndex, endIndex) || [];
 
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) setCurrentPage(page);
@@ -48,7 +41,7 @@ export default function Section1({
       <section className="vl-blog-iner-sec pt-100 pb-70">
         <div className="container">
           <div className="row">
-            {blogs?.map((blogs, index) => (
+            {currentBlog.map((blogs, index) => (
               <div className="col-lg-4 col-md-6 mb-30" key={index}>
                 {/* single blog box */}
                 <div className="vl-single-blog-box">

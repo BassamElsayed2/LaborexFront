@@ -113,7 +113,7 @@ export default function Section3({ news }: { news?: newsType[] }) {
                     </div>
                     <div className="content">
                       <h4 className="title pt-24">
-                        <Link href="/service-single">
+                        <Link href={`/${locale}/service/${news.id}`}>
                           {locale === "en" ? news.title_en : news.title_ar}
                         </Link>
                       </h4>

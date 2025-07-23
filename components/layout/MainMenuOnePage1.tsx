@@ -93,7 +93,7 @@ export default function MainMenu() {
   return (
     <ul>
       <li>
-        <Link href="#about">{locale === "en" ? "About us" : "عنا"}</Link>
+        <Link href="/about">{locale === "en" ? "About us" : "عنا"}</Link>
       </li>
       <li>
         <Link href="/service">{locale === "en" ? "Services" : "الخدمات"}</Link>
