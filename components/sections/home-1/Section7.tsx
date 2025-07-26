@@ -50,41 +50,7 @@ export default function Section7() {
                           }
                         />
                       </div>
-                      <div className="col-lg-6 mb-24">
-                        <input
-                          name="email"
-                          type="email"
-                          placeholder={
-                            locale === "en"
-                              ? "Email Address"
-                              : "البريد الإلكتروني"
-                          }
-                        />
-                      </div>
-                      <div className="col-lg-6 mb-24">
-                        <select
-                          name="select-date"
-                          className="nice-select wide vl-select-date"
-                        >
-                          <option
-                            data-display={locale === "en" ? "Date" : "اليوم"}
-                          >
-                            {locale === "en"
-                              ? "Monday - Friday(9AM - 10PM)"
-                              : "الاثنين - الجمعة (9 صباحًا - 10 مساءً)"}
-                          </option>
-                          <option value={1}>
-                            {locale === "en"
-                              ? "Sunday(9AM - 10PM)"
-                              : "الأحد (9 صباحًا - 10 مساءً)"}
-                          </option>
-                          <option value={2}>
-                            {locale === "en"
-                              ? "Saturday(10AM - 4PM)"
-                              : "السبت (10 صباحًا - 4 مساءً)"}
-                          </option>
-                        </select>
-                      </div>
+
                       <div className="col-lg-12 mb-24">
                         <textarea
                           name="message"

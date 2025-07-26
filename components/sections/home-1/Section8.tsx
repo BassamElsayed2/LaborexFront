@@ -9,6 +9,8 @@ export default function Section8({ blogs }: { blogs?: BlogType[] }) {
 
   const locale = useLocale();
 
+  console.log(blogs);
+
   return (
     <>
       {/*================= Blog section Start =================*/}
@@ -82,6 +84,15 @@ export default function Section8({ blogs }: { blogs?: BlogType[] }) {
                         {locale === "en" ? blog.title_en : blog.title_ar}
                       </Link>
                     </h3>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          (locale === "en" ? blog.content_en : blog.content_ar)
+                            ?.split(" ")
+                            .slice(0, 40)
+                            .join(" ") + "...",
+                      }}
+                    ></div>
                     <Link
                       href={`/${locale}/blog/${blog.id}`}
                       className="blog-learnmore"

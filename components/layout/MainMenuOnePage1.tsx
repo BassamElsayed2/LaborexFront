@@ -104,7 +104,10 @@ export default function MainMenu() {
         <Link href="/blog">{locale === "en" ? "Blog" : "الاخبار"}</Link>
       </li>
       <li>
-        <Link href="#contact">{locale === "en" ? "Contact" : "اتصل بنا"}</Link>
+        <Link href="/#contact">{locale === "en" ? "Contact" : "اتصل بنا"}</Link>
+      </li>
+      <li>
+        <Link href="/order">{locale === "en" ? "order" : "طلب"}</Link>
       </li>
       <li>
         <Link href="/work">{locale === "en" ? "Work" : "وظيفة"}</Link>
