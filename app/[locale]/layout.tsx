@@ -3,20 +3,20 @@ import "/public/assets/css/plugins/aos.css";
 import "/public/assets/css/plugins/all.css";
 import "/public/assets/css/plugins/nice-select.css";
 import "/public/assets/css/plugins/barfiller.css";
-
 import "/public/assets/css/style.css";
 
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Cairo } from "next/font/google"; // ✅ Use Cairo
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 
 import QueryProvider from "@/util/QueryProvider";
 
-const figtree = Figtree({
+// ✅ Set up Cairo font
+const cairo = Cairo({
+  subsets: ["arabic", "latin"],
   weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
   display: "swap",
 });
 
@@ -41,7 +41,7 @@ export default async function RootLayout(props: {
 
   return (
     <html lang={locale} dir={direction}>
-      <body className={figtree.className}>
+      <body className={cairo.className}>
         <QueryProvider>
           <NextIntlClientProvider>{props.children}</NextIntlClientProvider>
         </QueryProvider>

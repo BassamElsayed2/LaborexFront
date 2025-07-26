@@ -17,6 +17,7 @@ export default function Header({
 
   return (
     <>
+    
       <header>
         <div
           id="vl-header-sticky"
@@ -29,7 +30,7 @@ export default function Header({
               <div className="col-lg-3 col-md-6 col-6">
                 <div className="vl-logo">
                   <Link href="/">
-                    <img src="/assets/img/logo/vl-logo-1.1.png" alt="" />
+                    <img src="/assets/img/logo/logo.png" alt="" />
                   </Link>
                 </div>
               </div>
@@ -55,7 +56,7 @@ export default function Header({
                     </div>
                     <div className="vl-content">
                       <div className="title">
-                        {locale === "en" ? "Hotline 24/7" : "الخط الساخن 24/7"}
+                        {locale === "en" ? "Call Us" : "إتصل بنا"}
                       </div>
                       <Link href="tel:+49309233255" className="number">
                         +12345678

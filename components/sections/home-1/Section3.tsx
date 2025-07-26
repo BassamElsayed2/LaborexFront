@@ -100,9 +100,13 @@ export default function Section3({ news }: { news?: newsType[] }) {
                     backgroundImage: `url(${news.images?.[0]})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
+                    position: "relative",
                   }}
                 >
-                  <div className="vl-service-icon-box">
+                  <div
+                    className="vl-service-icon-box"
+                    style={{ position: "relative", zIndex: 2 }}
+                  >
                     <div className="icon">
                       <span className="icon1">
                         <img
@@ -112,28 +116,69 @@ export default function Section3({ news }: { news?: newsType[] }) {
                       </span>
                     </div>
                     <div className="content">
-                      <h4 className="title pt-24">
+                      <h4 className="title pt-24 ">
                         <Link href={`/${locale}/service/${news.id}`}>
                           {locale === "en" ? news.title_en : news.title_ar}
                         </Link>
                       </h4>
                       <div
-                        className="para pt-16 pb-24 "
-                        dangerouslySetInnerHTML={{
-                          __html:
-                            (locale === "en"
-                              ? news.content_en
-                              : news.content_ar
-                            )
-                              ?.split(" ")
-                              .slice(0, 20)
-                              .join(" ") + "...",
+                        className="para pt-16 pb-24 pr-15"
+                        style={{ position: "relative" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            background: "rgba(255,255,255,0.3)",
+                            zIndex: -1,
+                            borderRadius: "10px",
+                          }}
+                        />
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html:
+                              (locale === "en"
+                                ? news.content_en
+                                : news.content_ar
+                              )
+                                ?.split(" ")
+                                .slice(0, 20)
+                                .join(" ") + "...",
+                          }}
+                        ></div>
+                      </div>
+
+                      <Link
+                        href={`/${locale}/service/${news.id}`}
+                        className="learnmore"
+                        style={{
+                          position: "relative",
+                          display: "inline-block",
+                          color: "#fff",
+                          zIndex: 2,
+                          padding: "5px",
                         }}
-                      ></div>
-                      <Link href="/service-single" className="learnmore">
+                      >
+                        {/* Blue overlay behind the text */}
+                        <div
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            background: "#0074D9", // blue color
+                            opacity: 0.85,
+                            borderRadius: "8px",
+                            zIndex: -1,
+                          }}
+                        />
                         {locale === "en" ? "Learn More" : "اعرف المزيد"}
                         <span className="right-arow">
-                          <i className="fa-regular fa-arrow-right" />
+                          <i className="fa-regular fa-arrow-right mr-4 text-white" />
                         </span>
                       </Link>
                     </div>

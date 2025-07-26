@@ -77,6 +77,10 @@
 
 
 *----------------------------------------*/
+[dir="rtl"] body {
+  font-family: "Cairo", sans-serif;
+}
+
 a,
 a:hover {
   text-decoration: none;
@@ -8005,6 +8009,7 @@ textarea {
   display: inline-block;
   margin-right: 30px;
   position: relative;
+  font-size: 10pt;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .vl-main-menu ul > li {
@@ -8012,14 +8017,15 @@ textarea {
   }
 }
 .vl-main-menu ul > li > a {
-  color: #fff;
+  color: #1b1b1b;
   font-family: var(--vl-fonts-figtree);
-  font-size: 18px;
+  font-size: 15px;
   display: inline-block;
   position: relative;
   transition: 0.3s;
   padding: 24px 0;
   font-weight: var(--vkl-weight-semibold);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 .vl-main-menu ul > li > a span {
   font-size: 12px;
@@ -8313,7 +8319,7 @@ textarea {
   font-size: var(--vkl-font-size-font-s16);
   line-height: var(--vkl-specing-height26);
   font-weight: var(--vkl-weight-medium);
-  color: #d0d3d4;
+  color: #161616;
 }
 .vl-header-icon-box-flex .vl-content .number {
   display: inline-block;
@@ -11249,7 +11255,7 @@ textarea {
   color: var(--vkl-text-text-6);
   font-size: var(--vkl-font-size-font-s24);
   line-height: var(--vkl-specing-height24);
-  font-weight: var(--vkl-weight-semibold);
+  font-weight: bold;
   transition: 0.3s;
 }
 .vl-single-service-box-iner .vl-service-icon-box .content .title:hover {
@@ -12186,7 +12192,7 @@ textarea {
   background-repeat: no-repeat;
   padding-top: 230px;
   padding-bottom: 120px;
-  position: relative;
+
   z-index: 1;
 }
 .vl-banner-area:after {
@@ -12225,7 +12231,7 @@ textarea {
   border-radius: 8px;
   text-transform: uppercase;
   padding: 8px 14px;
-  font-size: var(--vkl-font-size-font-s18);
+  font-size: 14pt;
   line-height: var(--vkl-specing-height18);
   font-weight: var(--vkl-weight-semibold);
   transform: translateX(-508px);
@@ -12234,7 +12240,8 @@ textarea {
 }
 .vl-banner-area-content .title {
   color: var(--vkl-text-text-1);
-  font-size: var(--vkl-font-size-font-s64);
+  font-size: 25pt;
+  text-shadow: 2px 2px 4px rgb(76, 76, 76);
   line-height: var(--vkl-specing-height70);
   font-weight: var(--vkl-weight-semibold);
   transform: translateX(-508px);
@@ -12252,6 +12259,7 @@ textarea {
   line-height: var(--vkl-specing-height26);
   font-weight: var(--vkl-weight-medium);
   transform: translateX(-508px);
+  text-shadow: 1px 1px 2px rgb(105, 105, 105);
   transition: 1400ms;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -12474,7 +12482,6 @@ div#banner-slid1e {
   .subtitle {
   transform: translateX(0px);
   transition: 1100ms;
-  opacity: 1;
 }
 #banner-slid1e
   .swiper-slide.swiper-slide-active
@@ -12482,12 +12489,10 @@ div#banner-slid1e {
   .title {
   transform: translateX(0px);
   transition: 1200ms;
-  opacity: 1;
 }
 #banner-slid1e .swiper-slide.swiper-slide-active .vl-banner-area-content .para {
   transform: translateX(0px);
   transition: 1400ms;
-  opacity: 1;
 }
 #banner-slid1e
   .swiper-slide.swiper-slide-active

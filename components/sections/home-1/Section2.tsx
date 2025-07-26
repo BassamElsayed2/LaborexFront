@@ -54,7 +54,7 @@ export default function Section2() {
                   >
                     {locale === "en"
                       ? " We believe building lasting relationships with  our patients, taking the time understand your unique needs and goals from preventive care."
-                      : " نحن نؤمن ببناء علاقات دائمة مع مرضانا، مع أخذ الوقت الكافي لفهم احتياجاتك الفريدة وأهدافك من الرعاية الوقائية."}
+                      : "نلتزم بتوفير أصناف دوائية معتمدة تغطي احتياجات الصيدليات والمستشفيات في مختلف المحافظات."}
                   </p>
                 </div>
                 <div

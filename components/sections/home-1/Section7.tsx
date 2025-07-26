@@ -115,7 +115,7 @@ export default function Section7() {
             >
               <div
                 className="vl-contact-thumb1 image-anime"
-                data-background=".//assets/img/contact/vl-contact-thumb-1.1.png"
+                data-background="/assets/img/contact/vl-contact-thumb-1.1.png"
               >
                 {/* contact-info */}
                 <div className="vl-contact-info-box">

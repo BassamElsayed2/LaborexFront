@@ -1,5 +1,5 @@
 "use client";
-
+import { Html, Head, Main, NextScript } from 'next/document'
 import Layout from "@/components/layout/Layout";
 import Section1 from "@/components/sections/home-1/Section1";
 import Section2 from "@/components/sections/home-1/Section2";

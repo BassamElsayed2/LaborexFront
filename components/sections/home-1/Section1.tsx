@@ -47,7 +47,7 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background=".//assets/img/banner/vl-banner-1.1.png"
+              data-background=".//assets/img/banner/1.jpg"
             >
               <div className="shape shape-1">
                 <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
@@ -61,25 +61,23 @@ export default function Section1() {
                     <div className="vl-banner-area-content fix p-relative">
                       <h5 className="subtitle">
                         {locale === "en"
-                          ? "Confident Smile Begins Here"
-                          : "الابتسامة الواثقة تبدأ من هنا"}
+                          ? "Comprehensive and Safe Drug Inventory"
+                          : "مخزون دوائي متكامل وآمن"}
                       </h5>
                       <h1 className="title text-anime-style-3 pt-16 pb-16">
                         {locale === "en"
-                          ? "Creating Beautiful Smiles With The Personal Touch"
-                          : "نصنع ابتسامات جميلة بلمسة شخصية"}
+                          ? "Comprehensive and Safe Drug Inventory"
+                          : "مخزون دوائي متكامل وآمن"}
                       </h1>
                       <p className="para pb-32">
                         {locale === "en" ? (
                           <>
-                            Our dedicated team of professionals is committed to
-                            delivering <br /> personalized, high-quality dental
-                            care a comfortable &amp; friendly.
+                          We offer thousands of certified medical items with continuous monitoring of expiration 
                           </>
                         ) : (
                           <>
-                            فريقنا المتخصص ملتزم بتقديم رعاية أسنان عالية الجودة{" "}
-                            <br /> وشخصية في بيئة مريحة وودية.
+                          {" "}
+                            <br /> نوفر آلاف الأصناف الطبية المعتمدة مع متابعة مستمرة<br></br>  لتواريخ الصلاحية
                           </>
                         )}
                       </p>
@@ -128,7 +126,7 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background=".//assets/img/banner/vl-banner-1.1.png"
+              data-background=".//assets/img/banner/3.jpg"
             >
               <div className="shape shape-1">
                 <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
@@ -142,25 +140,22 @@ export default function Section1() {
                     <div className="vl-banner-area-content fix p-relative">
                       <h5 className="subtitle">
                         {locale === "en"
-                          ? "Confident Smile Begins Here"
-                          : "الابتسامة الواثقة تبدأ من هنا"}
+                          ? "Trusted Partnerships with Pharma Companies"
+                          : "شراكة موثوقة مع شركات الأدوية"}
                       </h5>
                       <h1 className="title text-anime-style-3 pt-16 pb-16">
                         {locale === "en"
-                          ? "Creating Beautiful Smiles With The Personal Touch"
-                          : "نصنع ابتسامات جميلة بلمسة شخصية"}
+                          ? "Trusted Partnerships with Pharma Companies"
+                          : "شراكة موثوقة مع شركات الأدوية"}
                       </h1>
                       <p className="para pb-32">
                         {locale === "en" ? (
                           <>
-                            Our dedicated team of professionals is committed to
-                            delivering <br /> personalized, high-quality dental
-                            care a comfortable &amp; friendly.
+                        We collaborate with top local and international companies to<br></br> ensure the highest quality 
                           </>
                         ) : (
                           <>
-                            فريقنا المتخصص ملتزم بتقديم رعاية أسنان عالية الجودة{" "}
-                            <br /> وشخصية في بيئة مريحة وودية.
+                             نتعامل مع كبرى الشركات المحلية والعالمية لضمان<br></br> أعلى جودة وأفضل سعر
                           </>
                         )}
                       </p>
@@ -209,7 +204,7 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background=".//assets/img/banner/vl-banner-1.1.png"
+              data-background=".//assets/img/banner/2.jpg"
             >
               <div className="shape shape-1">
                 <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
@@ -224,24 +219,21 @@ export default function Section1() {
                       <h5 className="subtitle">
                         {locale === "en"
                           ? "Confident Smile Begins Here"
-                          : "الابتسامة الواثقة تبدأ من هنا"}
+                          : "الابتسsasdasdsامة الواثقة تبدأ من هنا"}
                       </h5>
                       <h1 className="title text-anime-style-3 pt-16 pb-16">
                         {locale === "en"
-                          ? "Creating Beautiful Smiles With The Personal Touch"
-                          : "نصنع ابتسامات جميلة بلمسة شخصية"}
+                          ? "24/7 Technical Support & Customer Service"
+                          : "دعم فني وخدمة عملاء على مدار الساعة"}
                       </h1>
                       <p className="para pb-32">
                         {locale === "en" ? (
                           <>
-                            Our dedicated team of professionals is committed to
-                            delivering <br /> personalized, high-quality dental
-                            care a comfortable &amp; friendly.
+                           Our team is ready to assist you with every step of the ordering <br></br>and distribution process
                           </>
                         ) : (
                           <>
-                            فريقنا المتخصص ملتزم بتقديم رعاية أسنان عالية الجودة{" "}
-                            <br /> وشخصية في بيئة مريحة وودية.
+                           فريقنا جاهز للرد على استفساراتك ومساعدتك في كل خطوة من<br></br> عملية الطلب والتوزيع
                           </>
                         )}
                       </p>
