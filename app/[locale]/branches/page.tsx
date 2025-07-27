@@ -8,7 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useLocale } from "next-intl";
 import React from "react";
 
-function page() {
+function BranchesPage() {
   const locale = useLocale();
 
   const { data: branches } = useQuery({
@@ -154,4 +154,4 @@ function page() {
   );
 }
 
-export default page;
+export default BranchesPage;

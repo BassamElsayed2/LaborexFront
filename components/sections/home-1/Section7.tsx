@@ -21,7 +21,7 @@ export default function Section7() {
                     {locale === "en" ? "Contact Us" : "تواصل معنا"}
                   </h5>
                   <h2 className="title pt-16 text-anime-style-3">
-                    {locale === "en" ? "Book Your Appointment" : "احجز موعدك"}
+                    {locale === "en" ? "Book Your Appointment" : "للطلبات والاستفسار"}
                   </h2>
                 </div>
                 <div
@@ -46,7 +46,7 @@ export default function Section7() {
                           name="text"
                           type="text"
                           placeholder={
-                            locale === "en" ? "Last Name" : "اسم العائلة"
+                            locale === "en" ? "phone number" : "رقم الهاتف"
                           }
                         />
                       </div>
@@ -89,43 +89,17 @@ export default function Section7() {
                     <div className="vl-contact-info-box-flex">
                       <h4 className="title">
                         {locale === "en"
-                          ? "Monday - Friday"
-                          : "الاثنين - الجمعة"}
+                          ? "Thursday - English"
+                          : "السبت - الخميس"}
                       </h4>
                       <span className="time">
-                        {locale === "en" ? "9AM - 10PM" : "9 صباحًا - 10 مساءً"}
+                        {locale === "en" ? "10pM - 5PM" : "10 صباحًا - 5 مساءً"}
                       </span>
                     </div>
                   </div>
-                  <div className="vl-single-info-box">
-                    <div className="vl-contact-info-box-flex">
-                      <h4 className="title">
-                        {locale === "en" ? "Sunday" : "الأحد"}
-                      </h4>
-                      <span className="time">
-                        {locale === "en" ? "9AM - 10PM" : "9 صباحًا - 10 مساءً"}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="vl-single-info-box">
-                    <div className="vl-contact-info-box-flex">
-                      <h4 className="title">
-                        {locale === "en" ? "Saturday" : "السبت"}
-                      </h4>
-                      <span className="time">
-                        {locale === "en" ? "10AM - 4PM" : "10 صباحًا - 4 مساءً"}
-                      </span>
-                    </div>
-                  </div>
+                
                   <div className="vl-contact-info-btn mt-12">
-                    <Link
-                      href="tel:+11234567890"
-                      className="w-100 text-center vl-btn-primary"
-                    >
-                      {locale === "en"
-                        ? "Call +1 (123) 456-7890"
-                        : "اتصل على +1 (123) 456-7890"}
-                    </Link>
+                  
                   </div>
                 </div>
               </div>

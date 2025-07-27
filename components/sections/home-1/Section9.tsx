@@ -24,8 +24,8 @@ export default function Section9() {
                 <div className="vl-cta-content">
                   <h3 className="title text-anime-style-3 pb-32">
                     {locale === "en"
-                      ? "Don’t Wait, Your Smile Deserves the Best"
-                      : "لا تنتظر، ابتسامتك تستحق الأفضل"}
+                      ? "Get our news"
+                      : "إشترك معنا الان ليصلك كل جديد"}
                   </h3>
                   <div className="vl-cta-form">
                     <form action="#">

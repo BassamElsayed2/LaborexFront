@@ -94,24 +94,22 @@ export default function MainMenu() {
     <ul>
       <li>
         <Link href="/about">
-          {locale === "en" ? "About us" : "عن لابوريكس"}
+          {locale === "en" ? "About us" : "معلومات عنا"}
         </Link>
       </li>
       <li>
         <Link href="/service">{locale === "en" ? "Services" : "خدماتنا"}</Link>
       </li>
       <li>
-        <Link href="/blog">{locale === "en" ? "Blog" : "الاخبار"}</Link>
+        <Link href="/order">{locale === "en" ? "Order Now" : "اطلب الان"}</Link>
       </li>
       <li>
-        <Link href="/#contact">{locale === "en" ? "Contact" : "اتصل بنا"}</Link>
+        <Link href="/work">{locale === "en" ? "Jobs" : "وظائف"}</Link>
       </li>
       <li>
-        <Link href="/order">{locale === "en" ? "order" : "طلب"}</Link>
+        <Link href="/#contact">{locale === "en" ? "Contact" : "إتصل بنا"}</Link>
       </li>
-      <li>
-        <Link href="/work">{locale === "en" ? "Work" : "وظيفة"}</Link>
-      </li>
+ 
 
       <li ref={menuRef} style={{ position: "relative" }}>
         <button

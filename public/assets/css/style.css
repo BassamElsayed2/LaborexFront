@@ -8242,7 +8242,7 @@ textarea {
   left: 0;
   right: 0;
   top: 0;
-  background: var(--vkl-text-text-2);
+  background: rgba(0, 0, 0, 0.3);
   -webkit-animation: 0.7s ease-in-out 0s normal none 1 running vlfadeInDown;
   animation: 0.7s ease-in-out 0s normal none 1 running vlfadeInDown;
   z-index: 99;
@@ -9318,13 +9318,13 @@ textarea {
   justify-content: space-between;
 }
 .vl-contact-info-box .vl-single-info-box .vl-contact-info-box-flex .title {
-  color: var(--vkl-text-text-2);
+  color: white;
   font-size: var(--vkl-font-size-font-s20);
   line-height: var(--vkl-specing-height20);
   font-weight: var(--vkl-weight-semibold);
 }
 .vl-contact-info-box .vl-single-info-box .vl-contact-info-box-flex .time {
-  color: var(--vkl-text-text-2);
+  color: white;
   font-size: var(--vkl-font-size-font-s20);
   line-height: var(--vkl-specing-height20);
   font-weight: var(--vkl-weight-semibold);
@@ -9567,7 +9567,7 @@ textarea {
 }
 .vl-cta-content .title {
   color: var(--vkl-text-text-1);
-  font-size: var(--vkl-font-size-font-s44);
+  font-size: 19pt;
   line-height: var(--vkl-specing-height52);
   font-weight: var(--vkl-weight-semibold);
 }

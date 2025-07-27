@@ -5,7 +5,7 @@ import Section9 from "@/components/sections/home-1/Section9";
 
 import React from "react";
 
-function page() {
+function WorkPage() {
   return (
     <Layout mainMenuStyle="one-page">
       <Section10 />
@@ -14,4 +14,4 @@ function page() {
   );
 }
 
-export default page;
+export default WorkPage;

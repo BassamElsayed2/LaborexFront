@@ -6,7 +6,7 @@ import SectionHeader from "@/components/layout/SectionHeader";
 import Section9 from "@/components/sections/home-1/Section9";
 import { getBlog } from "@/services/apiBlog";
 import { useQuery } from "@tanstack/react-query";
-export default function Home() {
+function BlogPage() {
   const { data: blogs } = useQuery({
     queryKey: ["blog"],
     queryFn: getBlog,
@@ -29,3 +29,5 @@ export default function Home() {
     </>
   );
 }
+
+export default BlogPage;

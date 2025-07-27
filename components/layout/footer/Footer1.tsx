@@ -20,106 +20,52 @@ export default function Footer() {
                 <div className="vl-footer-content">
                   <p className="pt-24 pb-24">
                     {locale === "en"
-                      ? "We’re dedicated to providing high-quality, compassionate dental care for patients of all  ages from preventive care."
-                      : "نحن ملتزمون بتقديم رعاية أسنان عالية الجودة ورحيمة للمرضى من جميع الأعمار من الرعاية الوقائية."}
+                      ? "Laborex Pharmaceuticals Warehouse provides reliable and safe pharmaceutical solutions to meet market"
+                      : "لابوريكس للأدوية يوفر حلولًا دوائية موثوقة وآمنة لتلبية احتياجات السوق."}
                   </p>
                 </div>
                 <div className="vl-footer-social">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <i className="fa-brands fa-facebook-f" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa-brands fa-linkedin-in" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa-brands fa-instagram" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa-brands fa-youtube" />
-                      </Link>
-                    </li>
-                  </ul>
+            
                 </div>
               </div>
             </div>
             <div className="col-lg-2 col-md-6 mb-30">
-              <div className="vl-footer-widget-2">
-                <h3 className="vl-footer-widget-title mb-24">
-                  {locale === "en" ? "Quick Links" : "روابط سريعة"}
-                </h3>
-                <div className="vl-footer-menu">
-                  <ul>
-                    <li>
-                      <Link href="/">
-                        {locale === "en" ? "Home Page " : "الرئيسية"}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/about">
-                        {locale === "en" ? "About" : "من نحن"}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/contact">
-                        {locale === "en" ? "Appointment" : "حجز موعد"}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">
-                        {locale === "en" ? "News & Blog" : "الأخبار والمدونة"}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/service">
-                        {locale === "en" ? "Service" : "الخدمات"}
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+      
             </div>
             <div className="col-lg-2 col-md-6 mb-30">
               <div className="vl-footer-widget-3 ml-40">
                 <h3 className="vl-footer-widget-title mb-24">
-                  {locale === "en" ? "Our Services" : "خدماتنا"}
+                  {locale === "en" ? "Quick links" : "روابط سريعه"}
                 </h3>
                 <div className="vl-footer-menu">
                   <ul>
                     <li>
-                      <Link href="#">
+                      <Link href="/about">
                         {locale === "en"
-                          ? "General Dental"
-                          : "طب الأسنان العام"}
+                          ? "About us"
+                          : "معلومات عنا"}
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="/service">
                         {locale === "en"
-                          ? "Cosmetic Dental"
-                          : "طب الأسنان التجميلي"}
+                          ? "Our services"
+                          : "خدماتنا"}
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        {locale === "en" ? "Whitening Care" : "تبييض الأسنان"}
+                        {locale === "en" ? "Order Now" : "إطلب الان"}
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        {locale === "en" ? "Dental Implants" : "زراعة الأسنان"}
+                        {locale === "en" ? "Jobs" : "وظائف"}
                       </Link>
                     </li>
                     <li>
                       <Link href="#">
-                        {locale === "en" ? "Dental Care" : "العناية بالأسنان"}
+                        {locale === "en" ? "Contact us" : "اتصل بنا"}
                       </Link>
                     </li>
                   </ul>
@@ -135,17 +81,7 @@ export default function Footer() {
                 <div className="vl-footer-icon-list">
                   <ul>
                     <li>
-                      <Link href="#">
-                        <span>
-                          <img
-                            src="/assets/img/icons/vl-footer-icon-1.1.svg"
-                            alt=""
-                          />
-                        </span>
-                        {locale === "en"
-                          ? "+1 123 456 7890"
-                          : "+1 123 456 7890"}
-                      </Link>
+                     
                     </li>
                     <li>
                       <Link href="#">
@@ -156,8 +92,8 @@ export default function Footer() {
                           />
                         </span>
                         {locale === "en"
-                          ? "421 Allen, Mexico 4233"
-                          : "421 ألين، المكسيك 4233"}
+                          ? "Tanta , el rakha st."
+                          : "ش الرخاء من الاستاد - طنطا"}
                       </Link>
                     </li>
                     <li>
@@ -169,8 +105,8 @@ export default function Footer() {
                           />
                         </span>
                         {locale === "en"
-                          ? "dentistsolution@com"
-                          : "dentistsolution@com"}
+                          ? "info@laborex-pharma.co"
+                          : "info@laborex-pharma.co"}
                       </Link>
                     </li>
                     <li>
@@ -182,8 +118,8 @@ export default function Footer() {
                           />
                         </span>
                         {locale === "en"
-                          ? "dentistsolution.com"
-                          : "dentistsolution.com"}
+                          ? "laborex-pharma.co"
+                          : "laborex-pharma.co"}
                       </Link>
                     </li>
                   </ul>
@@ -198,26 +134,13 @@ export default function Footer() {
               <div className="col-lg-6 col-md-6">
                 <p className="para">
                   {locale === "en"
-                    ? "© 2025 Dentalx ,Inc. All Rights Reserved."
-                    : "© 2025 دينتالكس، جميع الحقوق محفوظة."}
+                    ? "© 2025 Laborex ,Inc. All Rights Reserved."
+                    : "© 2025 لابوريكس، جميع الحقوق محفوظة."}
                 </p>
               </div>
               <div className="col-lg-6 col-md-6">
                 <div className="copy-right-menu">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        {locale === "en" ? "Privacy Policy" : "سياسة الخصوصية"}{" "}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        {locale === "en"
-                          ? "Terms & Conditions"
-                          : "الشروط والأحكام"}
-                      </Link>
-                    </li>
-                  </ul>
+                 
                 </div>
               </div>
             </div>

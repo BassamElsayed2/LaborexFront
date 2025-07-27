@@ -88,10 +88,10 @@ export default function Section1() {
                         data-aos-duration={800}
                         data-aos-delay={300}
                       >
-                        <Link href="/contact" className="vl-btn-primary">
+                        <Link href="/order" className="vl-btn-primary">
                           {locale === "en"
-                            ? "Book An Appoinment"
-                            : "احجز موعداً"}
+                            ? "Order Now"
+                            : "إطلب الان"}
                         </Link>
                       </div>
                     </div>
@@ -166,10 +166,10 @@ export default function Section1() {
                         data-aos-duration={800}
                         data-aos-delay={300}
                       >
-                        <Link href="/contact" className="vl-btn-primary">
+                        <Link href="/order" className="vl-btn-primary">
                           {locale === "en"
-                            ? "Book An Appoinment"
-                            : "احجز موعداً"}
+                            ? "Order Now"
+                            : "إطلب الان"}
                         </Link>
                       </div>
                     </div>
@@ -219,7 +219,7 @@ export default function Section1() {
                       <h5 className="subtitle">
                         {locale === "en"
                           ? "Confident Smile Begins Here"
-                          : "الابتسsasdasdsامة الواثقة تبدأ من هنا"}
+                          : "الابتسsامة الواثقة تبدأ من هنا"}
                       </h5>
                       <h1 className="title text-anime-style-3 pt-16 pb-16">
                         {locale === "en"
@@ -244,10 +244,10 @@ export default function Section1() {
                         data-aos-duration={800}
                         data-aos-delay={300}
                       >
-                        <Link href="/contact" className="vl-btn-primary">
+                        <Link href="/order" className="vl-btn-primary">
                           {locale === "en"
-                            ? "Book An Appoinment"
-                            : "احجز موعداً"}
+                            ? "Order Now"
+                            : "إطلب الان"}
                         </Link>
                       </div>
                     </div>

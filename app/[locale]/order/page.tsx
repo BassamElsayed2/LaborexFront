@@ -4,7 +4,7 @@ import Section9 from "@/components/sections/home-1/Section9";
 
 import React from "react";
 
-function page() {
+function OrderPage() {
   return (
     <Layout mainMenuStyle="one-page">
       <Section11 />
@@ -13,4 +13,4 @@ function page() {
   );
 }
 
-export default page;
+export default OrderPage;

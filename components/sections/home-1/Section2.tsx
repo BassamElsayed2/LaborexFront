@@ -43,8 +43,8 @@ export default function Section2() {
                   </h5>
                   <h2 className="title text-anime-style-3 pt-16 pb-16 mr-20">
                     {locale === "en"
-                      ? "Our Story Caring for Your Smile"
-                      : "قصتنا العناية بابتسامتك"}
+                      ? "Your trusted partner in pharmaceutical distribution"
+                      : "شريكك الموثوق في توزيع الأدوية "}
                   </h2>
                   <p
                     className="para pb-32"
@@ -86,21 +86,21 @@ export default function Section2() {
                 {/* single counter box */}
                 <div className="single-couter-box text-center mb-30">
                   <h3>
-                    <span className="title">24X7</span>
+                    <span className="title">50000+</span>
                   </h3>
                   <span className="deseg">
-                    {locale === "en" ? " Emergency Service" : "  خدمة الطوارئ"}
+                    {locale === "en" ? " Emergency Service" : "  صنف دوائي"}
                   </span>
                 </div>
                 {/* single counter box */}
                 <div className="single-couter-box text-center mb-30">
                   <h3>
-                    <span className="title counter">25</span>
-                    <span>K+</span>
+                    <span className="title counter">5300+</span>
+                 
                   </h3>
                   <span className="deseg">
                     {" "}
-                    {locale === "en" ? " Recover Patient" : "تعافي المريض"}
+                    {locale === "en" ? " Recover Patient" : "عميل "}
                   </span>
                 </div>
                 {/* single counter box */}

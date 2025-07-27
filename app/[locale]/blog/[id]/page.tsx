@@ -9,7 +9,7 @@ import { useParams } from "next/navigation";
 import { getBlogsById } from "@/services/apiBlog";
 import { useQuery } from "@tanstack/react-query";
 
-export default function Home() {
+function BlogDetailsPage() {
   const params = useParams();
   const id = params?.id as string;
 
@@ -37,3 +37,5 @@ export default function Home() {
     </>
   );
 }
+
+export default BlogDetailsPage;
