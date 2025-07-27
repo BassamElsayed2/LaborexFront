@@ -7,7 +7,14 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <SectionHeader title="Our Service Details" isGroup={true} linkGroup="/service" pageGroup="Our Service" current="Our Service Details" />
+        <SectionHeader
+          title_en="Our Service Details"
+          title_ar="تفاصيل الخدمة"
+          isGroup={true}
+          linkGroup="/service"
+          pageGroup="Our Service"
+          current="Our Service Details"
+        />
         <Section1 left={false} />
         <Section2 />
         <Section9 />

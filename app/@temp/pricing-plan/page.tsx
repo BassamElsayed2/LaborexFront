@@ -8,7 +8,14 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <SectionHeader title="Pricing Plan" isGroup={false} linkGroup="" pageGroup="" current="Pricing Plan" />
+        <SectionHeader
+          title_en="Pricing Plan"
+          title_ar="خطط التسعير"
+          isGroup={false}
+          linkGroup=""
+          pageGroup=""
+          current="Pricing Plan"
+        />
         <Section1 />
         <Section2 />
         <Section3 background="vl-white-bg" />

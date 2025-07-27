@@ -6,7 +6,14 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <SectionHeader title="FAQ’s" isGroup={false} linkGroup="" pageGroup="" current="FAQ’s" />
+        <SectionHeader
+          title_en="FAQ’s"
+          title_ar="الأسئلة الشائعة"
+          isGroup={false}
+          linkGroup=""
+          pageGroup=""
+          current="FAQ’s"
+        />
         <Section1 />
         <Section9 />
       </Layout>
