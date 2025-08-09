@@ -93,23 +93,30 @@ export default function MainMenu() {
   return (
     <ul>
       <li>
-        <Link href="/about">
+        <Link href={`/${locale}/about`}>
           {locale === "en" ? "About us" : "معلومات عنا"}
         </Link>
       </li>
       <li>
-        <Link href="/service">{locale === "en" ? "Services" : "خدماتنا"}</Link>
+        <Link href={`/${locale}/service`}>
+          {locale === "en" ? "Services" : "خدماتنا"}
+        </Link>
       </li>
       <li>
-        <Link href="/order">{locale === "en" ? "Order Now" : "اطلب الان"}</Link>
+        <Link href={`/${locale}/order`}>
+          {locale === "en" ? "Order Now" : "اطلب الان"}
+        </Link>
       </li>
       <li>
-        <Link href="/work">{locale === "en" ? "Jobs" : "وظائف"}</Link>
+        <Link href={`/${locale}/work`}>
+          {locale === "en" ? "Jobs" : "وظائف"}
+        </Link>
       </li>
       <li>
-        <Link href="/#contact">{locale === "en" ? "Contact" : "إتصل بنا"}</Link>
+        <Link href={`/${locale}/#contact`}>
+          {locale === "en" ? "Contact" : "إتصل بنا"}
+        </Link>
       </li>
- 
 
       <li ref={menuRef} style={{ position: "relative" }}>
         <button

@@ -187,12 +187,12 @@ export default function Section11() {
               <div className="vl-contact-info-box">
                 <div className="vl-contact-info-btn mt-12">
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+01201788357"
                     className="w-100 text-center vl-btn-primary"
                   >
                     {locale === "en"
-                      ? "Call +1 (123) 456-7890"
-                      : "اتصل على +1 (123) 456-7890"}
+                      ? "Call +01201788357"
+                      : "اتصل على +01201788357"}
                   </a>
                 </div>
               </div>

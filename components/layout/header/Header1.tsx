@@ -17,7 +17,6 @@ export default function Header({
 
   return (
     <>
-    
       <header>
         <div
           id="vl-header-sticky"
@@ -58,8 +57,8 @@ export default function Header({
                       <div className="title">
                         {locale === "en" ? "Call Us" : "إتصل بنا"}
                       </div>
-                      <Link href="tel:+49309233255" className="number">
-                        +12345678
+                      <Link href="tel:+01201788357" className="number">
+                        +01201788357
                       </Link>
                     </div>
                   </div>

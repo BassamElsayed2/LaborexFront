@@ -24,14 +24,10 @@ export default function Footer() {
                       : "لابوريكس للأدوية يوفر حلولًا دوائية موثوقة وآمنة لتلبية احتياجات السوق."}
                   </p>
                 </div>
-                <div className="vl-footer-social">
-            
-                </div>
+                <div className="vl-footer-social"></div>
               </div>
             </div>
-            <div className="col-lg-2 col-md-6 mb-30">
-      
-            </div>
+            <div className="col-lg-2 col-md-6 mb-30"></div>
             <div className="col-lg-2 col-md-6 mb-30">
               <div className="vl-footer-widget-3 ml-40">
                 <h3 className="vl-footer-widget-title mb-24">
@@ -40,31 +36,27 @@ export default function Footer() {
                 <div className="vl-footer-menu">
                   <ul>
                     <li>
-                      <Link href="/about">
-                        {locale === "en"
-                          ? "About us"
-                          : "معلومات عنا"}
+                      <Link href={`/${locale}/about`}>
+                        {locale === "en" ? "About us" : "معلومات عنا"}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service">
-                        {locale === "en"
-                          ? "Our services"
-                          : "خدماتنا"}
+                      <Link href={`/${locale}/service`}>
+                        {locale === "en" ? "Our services" : "خدماتنا"}
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href={`/${locale}/order`}>
                         {locale === "en" ? "Order Now" : "إطلب الان"}
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href={`/${locale}/work`}>
                         {locale === "en" ? "Jobs" : "وظائف"}
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href={`/${locale}/#contact`}>
                         {locale === "en" ? "Contact us" : "اتصل بنا"}
                       </Link>
                     </li>
@@ -80,9 +72,7 @@ export default function Footer() {
                 {/* icon list */}
                 <div className="vl-footer-icon-list">
                   <ul>
-                    <li>
-                     
-                    </li>
+                    <li></li>
                     <li>
                       <Link href="#">
                         <span>
@@ -139,9 +129,7 @@ export default function Footer() {
                 </p>
               </div>
               <div className="col-lg-6 col-md-6">
-                <div className="copy-right-menu">
-                 
-                </div>
+                <div className="copy-right-menu"></div>
               </div>
             </div>
           </div>
