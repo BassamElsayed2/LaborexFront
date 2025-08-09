@@ -57,8 +57,8 @@ export default function Header({
                       <div className="title">
                         {locale === "en" ? "Call Us" : "إتصل بنا"}
                       </div>
-                      <Link href="tel:+01201788357" className="number">
-                        +01201788357
+                      <Link href="tel:01201788357" className="number">
+                        01201788357
                       </Link>
                     </div>
                   </div>

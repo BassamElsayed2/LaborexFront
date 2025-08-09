@@ -22,7 +22,7 @@ export default function About() {
           pageGroup=""
         />
         <Section2Home1 />
-        <Section1 background="vl-off-white-bg" />
+        {/* <Section1 background="vl-off-white-bg" /> */}
         <Section2 />
         {/* <Section3 /> */}
         {/* <Section6Home1 /> */}
