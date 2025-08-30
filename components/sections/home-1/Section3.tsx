@@ -73,8 +73,8 @@ export default function Section3({ news }: { news?: newsType[] }) {
                   </h5>
                   <h2 className="title pt-16 text-anime-style-3">
                     {locale === "en"
-                      ? "Your Complete Guide to Dental Health"
-                      : "دليلك الكامل لصحة الأسنان"}
+                      ? "Your Complete Guide to Drug Distribution"
+                      : "دليلك الكامل  في توزيع الأدوية"}
                   </h2>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function Section3({ news }: { news?: newsType[] }) {
                             left: 0,
                             width: "100%",
                             height: "100%",
-                            background: "rgba(255,255,255,0.3)",
+
                             zIndex: -1,
                             borderRadius: "10px",
                           }}

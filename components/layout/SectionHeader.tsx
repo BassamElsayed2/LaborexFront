@@ -23,7 +23,7 @@ export default function SectionHeader({
       {/*================= Breadcrumb section start =================*/}
       <section
         className="vl-breadcrumb-area"
-        data-background="/assets/img/breadcrumb/vl-about-breadcrumb.png"
+        data-background="/assets/img/s3.jpg"
       >
         <div className="container">
           <div className="vl-breadcrumb-content">

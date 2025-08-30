@@ -9621,7 +9621,6 @@ textarea {
 }
 
 [dir="rtl"] .vl-cta-content .vl-cta-form .cta-submit-btn .vl-btn-primary {
-  left: 5px;
   right: auto;
 }
 
@@ -10630,7 +10629,7 @@ textarea {
   transition: 0.3s;
 }
 .vl-single-service-box .vl-service-icon-box .content .para {
-  color: var(--vkl-text-text-7);
+  color: white;
   font-size: var(--vkl-font-size-font-s16);
   line-height: var(--vkl-specing-height24);
   font-weight: var(--vkl-weight-medium);

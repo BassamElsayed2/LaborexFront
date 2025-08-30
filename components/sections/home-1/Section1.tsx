@@ -47,7 +47,7 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background=".//assets/img/banner/1.jpg"
+              data-background=".//assets/img/laborexCompany.jpg"
             >
               <div className="shape shape-1">
                 <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
@@ -72,12 +72,14 @@ export default function Section1() {
                       <p className="para pb-32">
                         {locale === "en" ? (
                           <>
-                          We offer thousands of certified medical items with continuous monitoring of expiration 
+                            We offer thousands of certified medical items with
+                            continuous monitoring of expiration
                           </>
                         ) : (
                           <>
-                          {" "}
-                            <br /> نوفر آلاف الأصناف الطبية المعتمدة مع متابعة مستمرة<br></br>  لتواريخ الصلاحية
+                            {" "}
+                            <br /> نوفر آلاف الأصناف الطبية المعتمدة مع متابعة
+                            مستمرة<br></br> لتواريخ الصلاحية
                           </>
                         )}
                       </p>
@@ -89,14 +91,12 @@ export default function Section1() {
                         data-aos-delay={300}
                       >
                         <Link href="/order" className="vl-btn-primary">
-                          {locale === "en"
-                            ? "Order Now"
-                            : "إطلب الان"}
+                          {locale === "en" ? "Order Now" : "إطلب الان"}
                         </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 p-relative">
+                  {/* <div className="col-lg-6 p-relative">
                     <div className="video-shape">
                       <img
                         src="/assets/img/banner/vl-popup-video-thumb.png"
@@ -110,14 +110,14 @@ export default function Section1() {
                           <div className="play-icon popup-video">
                             <i className="fa-duotone fa-solid fa-play" />
                           </div>
-                          {/* Play icon */}
+                         
                         </div>
                         <div className="wave wave-1" />
                         <div className="wave wave-2" />
                         <div className="wave wave-3" />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background=".//assets/img/banner/3.jpg"
+              data-background=".//assets/img/s1.jpg"
             >
               <div className="shape shape-1">
                 <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
@@ -151,11 +151,13 @@ export default function Section1() {
                       <p className="para pb-32">
                         {locale === "en" ? (
                           <>
-                        We collaborate with top local and international companies to<br></br> ensure the highest quality 
+                            We collaborate with top local and international
+                            companies to<br></br> ensure the highest quality
                           </>
                         ) : (
                           <>
-                             نتعامل مع كبرى الشركات المحلية والعالمية لضمان<br></br> أعلى جودة وأفضل سعر
+                            نتعامل مع كبرى الشركات المحلية والعالمية لضمان
+                            <br></br> أعلى جودة وأفضل سعر
                           </>
                         )}
                       </p>
@@ -167,14 +169,12 @@ export default function Section1() {
                         data-aos-delay={300}
                       >
                         <Link href="/order" className="vl-btn-primary">
-                          {locale === "en"
-                            ? "Order Now"
-                            : "إطلب الان"}
+                          {locale === "en" ? "Order Now" : "إطلب الان"}
                         </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 p-relative">
+                  {/* <div className="col-lg-6 p-relative">
                     <div className="video-shape">
                       <img
                         src="/assets/img/banner/vl-popup-video-thumb.png"
@@ -188,14 +188,14 @@ export default function Section1() {
                           <div className="play-icon popup-video">
                             <i className="fa-duotone fa-solid fa-play" />
                           </div>
-                          {/* Play icon */}
+                          
                         </div>
                         <div className="wave wave-1" />
                         <div className="wave wave-2" />
                         <div className="wave wave-3" />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -204,7 +204,7 @@ export default function Section1() {
             {/* single slider */}
             <div
               className="vl-banner-area"
-              data-background=".//assets/img/banner/2.jpg"
+              data-background=".//assets/img/s2.jpg"
             >
               <div className="shape shape-1">
                 <img src="/assets/img/shape/vl-hero-shape-1.1.svg" alt="" />
@@ -229,11 +229,13 @@ export default function Section1() {
                       <p className="para pb-32">
                         {locale === "en" ? (
                           <>
-                           Our team is ready to assist you with every step of the ordering <br></br>and distribution process
+                            Our team is ready to assist you with every step of
+                            the ordering <br></br>and distribution process
                           </>
                         ) : (
                           <>
-                           فريقنا جاهز للرد على استفساراتك ومساعدتك في كل خطوة من<br></br> عملية الطلب والتوزيع
+                            فريقنا جاهز للرد على استفساراتك ومساعدتك في كل خطوة
+                            من<br></br> عملية الطلب والتوزيع
                           </>
                         )}
                       </p>
@@ -245,14 +247,12 @@ export default function Section1() {
                         data-aos-delay={300}
                       >
                         <Link href="/order" className="vl-btn-primary">
-                          {locale === "en"
-                            ? "Order Now"
-                            : "إطلب الان"}
+                          {locale === "en" ? "Order Now" : "إطلب الان"}
                         </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 p-relative">
+                  {/* <div className="col-lg-6 p-relative">
                     <div className="video-shape">
                       <img
                         src="/assets/img/banner/vl-popup-video-thumb.png"
@@ -266,14 +266,14 @@ export default function Section1() {
                           <div className="play-icon popup-video">
                             <i className="fa-duotone fa-solid fa-play" />
                           </div>
-                          {/* Play icon */}
+                         
                         </div>
                         <div className="wave wave-1" />
                         <div className="wave wave-2" />
                         <div className="wave wave-3" />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

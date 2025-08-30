@@ -13,11 +13,7 @@ export default function Section2() {
             <div className="col-lg-4 col-md-6 order-lg-1 order-md-2 mb-30">
               <div className="vl-about-thumb-1 p-relative">
                 <div className="vl-about-radius-thumb reveal image-anime">
-                  <img
-                    className="w-100"
-                    src="/assets/img/about/vl-about-thumb-1.1.png"
-                    alt=""
-                  />
+                  <img className="w-100" src="/assets/img/s3.jpg" alt="" />
                 </div>
                 <div className="vl-about-star-shape">
                   <div className="shape">
@@ -63,19 +59,15 @@ export default function Section2() {
                   data-aos-duration={800}
                   data-aos-delay={300}
                 >
-                  <Link href="/about" className="vl-btn-primary">
+                  {/* <Link href="/about" className="vl-btn-primary">
                     {locale === "en" ? "Learn More" : "اعرف المزيد"}
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 order-md-3 mb-30">
               <div className="vl-about-thumb-2 reveal image-anime">
-                <img
-                  className="w-100"
-                  src="/assets/img/about/vl-about-thumb-1.2.png"
-                  alt=""
-                />
+                <img className="w-100" src="/assets/img/s5.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -96,7 +88,6 @@ export default function Section2() {
                 <div className="single-couter-box text-center mb-30">
                   <h3>
                     <span className="title counter">5300+</span>
-                 
                   </h3>
                   <span className="deseg">
                     {" "}

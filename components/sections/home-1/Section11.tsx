@@ -182,7 +182,7 @@ export default function Section11() {
           >
             <div
               className="vl-contact-thumb1 image-anime"
-              data-background="/assets/img/blog/vl-blog-thumb-1.2.png"
+              data-background="/assets/img/s7.jpg"
             >
               <div className="vl-contact-info-box">
                 <div className="vl-contact-info-btn mt-12">

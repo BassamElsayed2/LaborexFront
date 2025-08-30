@@ -1,4 +1,5 @@
 import { useLocale } from "next-intl";
+import Link from "next/link";
 
 export default function Section9() {
   const locale = useLocale();
@@ -8,10 +9,7 @@ export default function Section9() {
       {/*================= Cta section start =================*/}
       <section className="vl-cta-area" dir={locale === "ar" ? "rtl" : "ltr"}>
         <div className="container">
-          <div
-            className="vl-cta-bg"
-            data-background="/assets/img/cta/vl-cta-bg-1.1.png"
-          >
+          <div className="vl-cta-bg" data-background="/assets/img/s9.jpg">
             <div className="vl-line-shape">
               <img
                 src="/assets/img/shape/cta-left-arrow-shape-1.1.svg"
@@ -25,11 +23,10 @@ export default function Section9() {
                   <h3 className="title text-anime-style-3 pb-32">
                     {locale === "en"
                       ? "Get our news"
-                      : "إشترك معنا الان ليصلك كل جديد"}
+                      : "اطلب الان ليصلك كل جديد"}
                   </h3>
                   <div className="vl-cta-form">
-                    <form action="#">
-                      <input
+                    {/* <input
                         name="email"
                         type="email"
                         placeholder={
@@ -37,13 +34,12 @@ export default function Section9() {
                             ? "Enter Your Email"
                             : "أدخل بريدك الإلكتروني"
                         }
-                      />
-                      <div className="cta-submit-btn">
-                        <button className="vl-btn-primary">
-                          {locale === "en" ? "Subscribe Now" : "اشترك الآن"}
-                        </button>
-                      </div>
-                    </form>
+                      /> */}
+                    <div className="cta-submit-btn">
+                      <Link href="/order" className="vl-btn-primary">
+                        {locale === "en" ? "Order Now" : "اطلب الآن"}
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

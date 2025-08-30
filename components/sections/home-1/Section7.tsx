@@ -21,7 +21,9 @@ export default function Section7() {
                     {locale === "en" ? "Contact Us" : "تواصل معنا"}
                   </h5>
                   <h2 className="title pt-16 text-anime-style-3">
-                    {locale === "en" ? "Book Your Appointment" : "للطلبات والاستفسار"}
+                    {locale === "en"
+                      ? "Book Your Appointment"
+                      : "للطلبات والاستفسار"}
                   </h2>
                 </div>
                 <div
@@ -81,7 +83,7 @@ export default function Section7() {
             >
               <div
                 className="vl-contact-thumb1 image-anime"
-                data-background="/assets/img/contact/vl-contact-thumb-1.1.png"
+                data-background="/assets/img/s7.jpg"
               >
                 {/* contact-info */}
                 <div className="vl-contact-info-box">
@@ -97,10 +99,8 @@ export default function Section7() {
                       </span>
                     </div>
                   </div>
-                
-                  <div className="vl-contact-info-btn mt-12">
-                  
-                  </div>
+
+                  <div className="vl-contact-info-btn mt-12"></div>
                 </div>
               </div>
             </div>
