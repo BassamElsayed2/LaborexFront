@@ -18,7 +18,7 @@
     "gsap": "^3.12.7",
     "isotope-layout": "^3.0.6",
     "next": "^15.3.2",
-    "next-intl": "^4.3.4",
+    "next-intl": "^4.3.5",
     "react": "^18",
     "react-before-after-slider-component": "^1.1.8",
     "react-dom": "^18",
