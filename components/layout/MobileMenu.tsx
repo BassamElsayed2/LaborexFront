@@ -1,8 +1,8 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { Link } from "@/i18n/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { useEffect, useRef, useState } from "react";
 
 interface MobileMenuProps {
@@ -107,17 +107,7 @@ export default function MobileMenu({
   const handleLanguageChange = (lang: LocaleType) => {
     setOpen(false);
     if (lang !== locale) {
-      // Split the pathname and replace the locale
-      const segments = pathname.split("/");
-      // segments[0] is always '', segments[1] is the locale
-      if (segments[1] === "ar" || segments[1] === "en") {
-        segments[1] = lang;
-      } else {
-        // If no locale in path, add it
-        segments.splice(1, 0, lang);
-      }
-      const newPath = segments.join("/") || "/";
-      router.push(newPath);
+      router.push(pathname, { locale: lang });
     }
   };
 

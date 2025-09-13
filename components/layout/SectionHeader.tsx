@@ -1,5 +1,5 @@
 import { useLocale } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 export default function SectionHeader({
   title_en,

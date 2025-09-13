@@ -1,5 +1,5 @@
 import { useLocale } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useState, useRef, useEffect } from "react";
 
@@ -93,29 +93,21 @@ export default function MainMenu() {
   return (
     <ul>
       <li>
-        <Link href={`/${locale}/about`}>
+        <Link href="/about">
           {locale === "en" ? "About us" : "معلومات عنا"}
         </Link>
       </li>
       <li>
-        <Link href={`/${locale}/service`}>
-          {locale === "en" ? "Services" : "خدماتنا"}
-        </Link>
+        <Link href="/service">{locale === "en" ? "Services" : "خدماتنا"}</Link>
       </li>
       <li>
-        <Link href={`/${locale}/order`}>
-          {locale === "en" ? "Order Now" : "اطلب الان"}
-        </Link>
+        <Link href="/order">{locale === "en" ? "Order Now" : "اطلب الان"}</Link>
       </li>
       <li>
-        <Link href={`/${locale}/work`}>
-          {locale === "en" ? "Jobs" : "وظائف"}
-        </Link>
+        <Link href="/work">{locale === "en" ? "Jobs" : "وظائف"}</Link>
       </li>
       <li>
-        <Link href={`/${locale}/#contact`}>
-          {locale === "en" ? "Contact" : "إتصل بنا"}
-        </Link>
+        <Link href="/#contact">{locale === "en" ? "Contact" : "إتصل بنا"}</Link>
       </li>
 
       <li ref={menuRef} style={{ position: "relative" }}>

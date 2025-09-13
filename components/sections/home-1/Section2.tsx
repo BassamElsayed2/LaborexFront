@@ -59,9 +59,9 @@ export default function Section2() {
                   data-aos-duration={800}
                   data-aos-delay={300}
                 >
-                  {/* <Link href="/about" className="vl-btn-primary">
+                  <Link href="/about" className="vl-btn-primary">
                     {locale === "en" ? "Learn More" : "اعرف المزيد"}
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
             </div>

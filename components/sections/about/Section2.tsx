@@ -7,44 +7,37 @@ export default function Section2() {
   // ترجمة النصوص
   const texts = {
     subtitle: locale === "en" ? "Our Mission Vision" : "رؤية رسالتنا",
-    title:
-      locale === "en"
-        ? "Vision & Mission Excellence in Dental Care Smile"
-        : "رؤيتنا ورسالتنا: التميز في رعاية الأسنان والابتسامة",
+    title: locale === "en" ? "Vision & Mission :" : "رؤيتنا ورسالتنا:     ",
     para:
       locale === "en"
-        ? "Our mission is to provide exceptional dental care enhances the health, confidence, & well-being of our patients we are committed fostering."
-        : "مهمتنا هي تقديم رعاية استثنائية للأسنان تعزز صحة وراحة وثقة مرضانا. نحن ملتزمون بدعم رفاهيتهم.",
+        ? "To be the leading pharmaceutical distribution company in the local market, providing reliable and fast services, and ensuring that high-quality medicines are available at the best prices to every pharmacy, thus achieving better health for the community."
+        : " أن تكون الشركة الرائدة في مجال توزيع الأدوية على مستوى السوق المحلي، بتقديم خدمات موثوقة وسريعة، وضمان وصول الدواء بجودة عالية وبأفضل الأسعار لكل صيدلية، بما يحقق صحة أفضل للمجتمع.",
     tabs: [
       {
         label: locale === "en" ? "Our Vision" : "رؤيتنا",
         content: [
           locale === "en" ? (
             <>
-              <span>Client-Centric:</span> We aim to inspire healthier
-              communities by promoting <br />
-              the importance of oral health and creating smiles that last a
-              lifetime. <br />
-              Together, we’re transforming lives, one smile at a time.
+              We seek to provide and distribute medicines and pharmaceuticals
+              efficiently and professionally from through: Building a strong and
+              reliable distribution network that covers all pharmacies. Ensuring
+              the quality of products and their compliance with international
+              health standards. Commitment to credibility and transparency in
+              dealing with our partners from companies and pharmacies. Investing
+              in technology and human cadres to provide a distinguished and fast
+              service. Supporting pharmacists in providing appropriate treatment
+              for patients, which contributes to improving the level of health
+              care. Providing the needs of pharmacists from market shortages
             </>
           ) : (
             <>
-              <span>محور العميل:</span> نهدف إلى إلهام مجتمعات أكثر صحة من خلال
-              تعزيز أهمية صحة الفم وخلق ابتسامات تدوم مدى الحياة.
-              <br />
-              معًا، نغير الحياة، ابتسامة تلو الأخرى.
-            </>
-          ),
-          locale === "en" ? (
-            <>
-              <span>Personalized Approach:</span> Our vision is to a leader in
-              dental excellence, continually advancing our services through
-              innovation, education.
-            </>
-          ) : (
-            <>
-              <span>نهج مخصص:</span> رؤيتنا أن نكون روادًا في التميز في طب
-              الأسنان، مع تطوير خدماتنا باستمرار من خلال الابتكار والتعليم.
+              نسعى لتوفير وتوزيع الأدوية والمستحضرات الطبية بكفاءة واحترافية من
+              خلال: بناء شبكة توزيع قوية وموثوقة تغطي جميع الصيدليات. ضمان جودة
+              المنتجات وتوافقها مع المعايير الصحية العالمية. الالتزام بالمصداقية
+              والشفافية في التعامل مع شركائنا من شركات وصيدليات. الاستثمار في
+              التكنولوجيا والكوادر البشرية لتقديم خدمة متميزة وسريعة. دعم
+              الصيادلة في توفير العلاج المناسب للمرضى بما يساهم في تحسين مستوى
+              الرعاية الصحية. توفير احتياجات السادة الصيادلة من نواقص السوق
             </>
           ),
         ],
@@ -54,62 +47,13 @@ export default function Section2() {
         content: [
           locale === "en" ? (
             <>
-              <span>Trusted Legacy:</span> With years of experience, we have
-              built a reputation for quality dental care and patient
-              satisfaction.
-              <br />
-              Our journey is marked by dedication and continuous improvement.
+              For 15 years we have been honored to serve pharmacies and provide
+              quality service in distribution and warehousing
             </>
           ) : (
             <>
-              <span>إرث موثوق:</span> على مدى سنوات من الخبرة، بنينا سمعة في
-              جودة رعاية الأسنان ورضا المرضى.
-              <br />
-              رحلتنا تتميز بالتفاني والتحسين المستمر.
-            </>
-          ),
-          locale === "en" ? (
-            <>
-              <span>Milestones:</span> We have achieved significant milestones
-              in dental innovation and patient care, making us a trusted choice
-              in the community.
-            </>
-          ) : (
-            <>
-              <span>محطات بارزة:</span> حققنا إنجازات كبيرة في الابتكار ورعاية
-              المرضى، مما يجعلنا خيارًا موثوقًا في المجتمع.
-            </>
-          ),
-        ],
-      },
-      {
-        label: locale === "en" ? "Why Choose Us" : "لماذا تختارنا",
-        content: [
-          locale === "en" ? (
-            <>
-              <span>Expert Team:</span> Our skilled professionals are dedicated
-              to providing the best dental care using the latest technology.
-              <br />
-              We prioritize your comfort and satisfaction.
-            </>
-          ) : (
-            <>
-              <span>فريق خبير:</span> فريقنا الماهر ملتزم بتقديم أفضل رعاية
-              للأسنان باستخدام أحدث التقنيات.
-              <br />
-              نحن نضع راحتك ورضاك في المقام الأول.
-            </>
-          ),
-          locale === "en" ? (
-            <>
-              <span>Comprehensive Services:</span> From preventive care to
-              advanced treatments, we offer a full range of dental services
-              tailored to your needs.
-            </>
-          ) : (
-            <>
-              <span>خدمات شاملة:</span> من الرعاية الوقائية إلى العلاجات
-              المتقدمة، نقدم مجموعة كاملة من خدمات الأسنان المصممة خصيصًا لك.
+              على مدى 15 عاما تشرفنا بخدمة الصيدليات وتوفيرخدمة جيدة ف
+              التوزيع والتخزين
             </>
           ),
         ],
@@ -178,11 +122,11 @@ export default function Section2() {
                           <p className="para pt-30 pb-20">{tab.content[0]}</p>
                           <p className="para pb-32">{tab.content[1]}</p>
                           {/* tab btn */}
-                          <div className="vl-tab-btn">
-                            <Link href="/contact" className="vl-btn-primary">
+                          {/* <div className="vl-tab-btn">
+                            <Link href="/order" className="vl-btn-primary">
                               {texts.btn}
                             </Link>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     ))}
@@ -194,11 +138,7 @@ export default function Section2() {
               {/* mission thumb */}
               <div className="vl-mission-iner-thumb">
                 <div className="vl-mission-thumb-iner reveal image-anime">
-                  <img
-                    className="w-100"
-                    src="/assets/img/about/vl-mission-thumb-iner1.1.png"
-                    alt=""
-                  />
+                  <img className="w-100" src="/assets/img/s7.jpg" alt="" />
                 </div>
                 {/* counter */}
                 <div className="vl-tab-counter-box">
