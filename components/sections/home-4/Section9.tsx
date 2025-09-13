@@ -25,7 +25,7 @@ export default function Section9() {
             <div className="row align-items-center">
               <div className="col-lg-6 mb-30">
                 <div className="vl-cta-content4">
-                  <h3 className="title text-anime-style-3">
+                  <h3 className="title ">
                     Don’t Wait Your Smile Deserves the Best
                   </h3>
                   <p

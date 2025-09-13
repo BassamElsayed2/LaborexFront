@@ -17,7 +17,7 @@ export default function Section2() {
                   >
                     About Us
                   </h5>
-                  <h2 className="title pt-16 text-anime-style-3">
+                  <h2 className="title pt-16 ">
                     Building Relationships One Smile at a Time
                   </h2>
                 </div>

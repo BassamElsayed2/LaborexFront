@@ -12,7 +12,7 @@ export default function Section1() {
             <div className="vl-service-sec-title-iner">
               {/* section title */}
               <div className="vl-section-title text-center mb-60">
-                <h2 className="title text-anime-style-3">More Blog</h2>
+                <h2 className="title ">More Blog</h2>
               </div>
             </div>
           </div>

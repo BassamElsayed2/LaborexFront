@@ -9,7 +9,7 @@ export default function Section10() {
             <div className="row">
               <div className="col-lg-6">
                 <div className="vl-cta-content2">
-                  <h3 className="title text-anime-style-3">
+                  <h3 className="title ">
                     Don’t Wait Your Smile Deserves the Best
                   </h3>
                   <p

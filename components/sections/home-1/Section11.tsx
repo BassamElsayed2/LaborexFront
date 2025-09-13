@@ -55,7 +55,7 @@ export default function Section11() {
                 >
                   {locale === "en" ? "Join us" : "أنضم ألينا "}
                 </h5> */}
-                <h2 className="title pt-16 text-anime-style-3">
+                <h2 className="title pt-16">
                   {locale === "en" ? "Order Now" : "أطلب الان  "}
                 </h2>
               </div>

@@ -64,7 +64,7 @@ export default function Section1() {
                           ? "Comprehensive and Safe Drug Inventory"
                           : "مخزون دوائي متكامل وآمن"}
                       </h5>
-                      <h1 className="title text-anime-style-3 pt-16 pb-16">
+                      <h1 className="title pt-16 pb-16">
                         {locale === "en"
                           ? "Comprehensive and Safe Drug Inventory"
                           : "مخزون دوائي متكامل وآمن"}
@@ -143,7 +143,7 @@ export default function Section1() {
                           ? "Trusted Partnerships with Pharma Companies"
                           : "شراكة موثوقة مع شركات الأدوية"}
                       </h5>
-                      <h1 className="title text-anime-style-3 pt-16 pb-16">
+                      <h1 className="title pt-16 pb-16">
                         {locale === "en"
                           ? "Trusted Partnerships with Pharma Companies"
                           : "شراكة موثوقة مع شركات الأدوية"}
@@ -221,7 +221,7 @@ export default function Section1() {
                           ? "Confident Smile Begins Here"
                           : "الابتسsامة الواثقة تبدأ من هنا"}
                       </h5>
-                      <h1 className="title text-anime-style-3 pt-16 pb-16">
+                      <h1 className="title pt-16 pb-16">
                         {locale === "en"
                           ? "24/7 Technical Support & Customer Service"
                           : "دعم فني وخدمة عملاء على مدار الساعة"}

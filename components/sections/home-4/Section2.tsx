@@ -44,7 +44,7 @@ export default function Section2() {
                   >
                     About Us
                   </h5>
-                  <h2 className="title text-anime-style-3 pt-16 pb-16">
+                  <h2 className="title  pt-16 pb-16">
                     Building Relationships One Smile at a Time
                   </h2>
                   <p

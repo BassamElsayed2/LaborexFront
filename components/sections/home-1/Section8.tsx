@@ -27,7 +27,7 @@ export default function Section8({ blogs }: { blogs?: BlogType[] }) {
                 >
                   {locale === "en" ? "Our Blog" : "مدوناتنا"}
                 </h5>
-                <h2 className="title pt-16 text-anime-style-3">
+                <h2 className="title pt-16">
                   {locale === "en"
                     ? "How to Handle a Drug  Quick Tips"
                     : "كيفية التعامل مع  الأدوية نصائح سريعة"}

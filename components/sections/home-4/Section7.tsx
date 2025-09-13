@@ -11,7 +11,7 @@ export default function Section7() {
                                     <h5 className="subtitle" data-aos="fade-up" data-aos-duration={800} data-aos-delay={300}>
                                         FAQ
                                     </h5>
-                                    <h2 className="title pt-16 text-anime-style-3">Common Questions About Our Dental Services</h2>
+                                    <h2 className="title pt-16 ">Common Questions About Our Dental Services</h2>
                                 </div>
                             </div>
                         </div>

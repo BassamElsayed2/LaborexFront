@@ -15,7 +15,7 @@ export default function Section4() {
                 >
                   How It Work
                 </h5>
-                <h2 className="title pt-16 text-anime-style-3">
+                <h2 className="title pt-16 ">
                   How Our Dental Care Works
                 </h2>
               </div>

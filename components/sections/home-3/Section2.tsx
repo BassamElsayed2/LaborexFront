@@ -20,7 +20,7 @@ export default function Section2() {
                       >
                         Why Choose us
                       </h5>
-                      <h2 className="title text-anime-style-3 pt-16 pb-16">
+                      <h2 className="title  pt-16 pb-16">
                         Caring for Your Smile Inside &amp; Out
                       </h2>
                       <p

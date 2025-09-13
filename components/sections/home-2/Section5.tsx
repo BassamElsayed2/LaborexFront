@@ -65,7 +65,7 @@ export default function Section5() {
                   >
                     Our Team
                   </h5>
-                  <h2 className="title pt-16 text-anime-style-3">
+                  <h2 className="title pt-16 ">
                     Meet the Professionals Who Make You Smile
                   </h2>
                 </div>

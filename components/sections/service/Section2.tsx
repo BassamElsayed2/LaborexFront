@@ -12,7 +12,7 @@ export default function Section2() {
                 {/* section title */}
                 <div className="vl-section-title text-center mb-60">
                   <h5 className="subtitle">Our Service</h5>
-                  <h2 className="title text-anime-style-3 pt-16">
+                  <h2 className="title  pt-16">
                     Your Complete Guide to Dental Health
                   </h2>
                 </div>

@@ -18,7 +18,7 @@ export default function Section9() {
                   >
                     LATEST NEWS &amp; Blog
                   </h5>
-                  <h2 className="title pt-16 text-anime-style-3">
+                  <h2 className="title pt-16 ">
                     What to Expect During Your First Visit to Our Dental Clinic
                   </h2>
                 </div>

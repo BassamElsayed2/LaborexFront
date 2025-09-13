@@ -18,7 +18,7 @@ export default function Section3() {
                   >
                     Our Service
                   </h5>
-                  <h2 className="title pt-16 text-anime-style-3">
+                  <h2 className="title pt-16 ">
                     Explore Our Services Quality Care for All Ages
                   </h2>
                 </div>

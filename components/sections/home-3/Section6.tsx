@@ -22,7 +22,7 @@ export default function Section6() {
                   >
                     After Before
                   </h5>
-                  <h2 className="title pt-16 text-anime-style-3">
+                  <h2 className="title pt-16 ">
                     Your Complete Guide <br /> to Dental Health
                   </h2>
                 </div>

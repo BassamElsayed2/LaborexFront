@@ -71,7 +71,7 @@ export default function Section3({ news }: { news?: newsType[] }) {
                   >
                     {locale === "en" ? "Our Service" : "خدماتنا"}
                   </h5>
-                  <h2 className="title pt-16 text-anime-style-3">
+                  <h2 className="title pt-16">
                     {locale === "en"
                       ? "Your Complete Guide to Drug Distribution"
                       : "دليلك الكامل  في توزيع الأدوية"}

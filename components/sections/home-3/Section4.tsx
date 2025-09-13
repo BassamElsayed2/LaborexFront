@@ -33,7 +33,7 @@ export default function Section4() {
                     >
                       visit clinic
                     </h5>
-                    <h2 className="title pt-16 text-anime-style-3">
+                    <h2 className="title pt-16 ">
                       Comprehensive Dental Care For All Ages
                     </h2>
                   </div>

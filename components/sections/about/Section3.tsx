@@ -11,7 +11,7 @@ export default function Section3() {
               <div className="vl-work-inner-content">
                 <div className="vl-section-title text-center mb-60">
                   <h5 className="subtitle">Our Work</h5>
-                  <h2 className="title pt-16 text-anime-style-3">
+                  <h2 className="title pt-16 ">
                     Our Work Creating Healthier The Happier Smiles
                   </h2>
                 </div>

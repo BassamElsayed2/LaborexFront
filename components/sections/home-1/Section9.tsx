@@ -20,7 +20,7 @@ export default function Section9() {
               <div className="col-lg-5" />
               <div className="col-lg-5">
                 <div className="vl-cta-content">
-                  <h3 className="title text-anime-style-3 pb-32">
+                  <h3 className="title pb-32">
                     {locale === "en"
                       ? "Get our news"
                       : "اطلب الان ليصلك كل جديد"}

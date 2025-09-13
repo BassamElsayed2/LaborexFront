@@ -55,7 +55,7 @@ export default function Section10() {
                 >
                   {locale === "en" ? "Join us" : "أنضم ألينا "}
                 </h5>
-                <h2 className="title pt-16 text-anime-style-3">
+                <h2 className="title pt-16">
                   {locale === "en" ? "Book a job with us" : "احجز وظيفة معنا"}
                 </h2>
               </div>

@@ -20,7 +20,7 @@ export default function Section7() {
                   >
                     {locale === "en" ? "Contact Us" : "تواصل معنا"}
                   </h5>
-                  <h2 className="title pt-16 text-anime-style-3">
+                  <h2 className="title pt-16">
                     {locale === "en"
                       ? "Book Your Appointment"
                       : "للطلبات والاستفسار"}

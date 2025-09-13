@@ -37,7 +37,7 @@ export default function Section2() {
                   >
                     {locale === "en" ? "About Us" : "نبذة عنا"}
                   </h5>
-                  <h2 className="title text-anime-style-3 pt-16 pb-16 mr-20">
+                  <h2 className="title pt-16 pb-16 mr-20">
                     {locale === "en"
                       ? "Your trusted partner in pharmaceutical distribution"
                       : "شريكك الموثوق في توزيع الأدوية "}

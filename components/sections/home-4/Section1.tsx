@@ -23,7 +23,7 @@ export default function Section1() {
                 >
                   Confident Smile Begins Here
                 </h5>
-                <h1 className="title text-anime-style-3 pt-16 pb-16">
+                <h1 className="title  pt-16 pb-16">
                   Advanced Dental Care Personalized for You
                 </h1>
                 <p

@@ -12,7 +12,7 @@ export default function Section9() {
                                 <div className="vl-contact-text-wraper-2" data-aos="fade-up" data-aos-duration={800} data-aos-delay={300}>
                                     <div className="vl-section-title2 mb-32">
                                         <h5 className="subtitle">Contact Us</h5>
-                                        <h2 className="title pt-16 text-anime-style-3">Reach Out for Your Smile</h2>
+                                        <h2 className="title pt-16 ">Reach Out for Your Smile</h2>
                                     </div>
                                     <div className="vl-contact-form vl-contact-form-2">
                                         <form action="#">

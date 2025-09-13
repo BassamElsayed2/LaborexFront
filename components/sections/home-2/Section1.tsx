@@ -39,9 +39,9 @@ export default function Section1() {
           <div className="row">
             <div className="col-lg-12">
               <div className="vl-banner-area-content-2 p-relative">
-                <h1 className="headingone pb-20 text-anime-style-3">
+                <h1 className="headingone pb-20 ">
                   Bright Smiles <br />{" "}
-                  <span className="heading2 text-anime-style-3">
+                  <span className="heading2 ">
                     Healthier Lives
                   </span>
                 </h1>

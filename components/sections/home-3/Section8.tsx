@@ -27,7 +27,7 @@ export default function Section8() {
                 >
                   Testimonial
                 </h5>
-                <h2 className="title pt-16 text-anime-style-3">
+                <h2 className="title pt-16 ">
                   What Our Patients Are Saying
                 </h2>
               </div>

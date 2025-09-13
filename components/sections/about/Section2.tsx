@@ -74,9 +74,7 @@ export default function Section2() {
                 {/* section title */}
                 <div className="vl-section-title">
                   <h5 className="subtitle">{texts.subtitle}</h5>
-                  <h2 className="title text-anime-style-3 pt-16 pb-16">
-                    {texts.title}
-                  </h2>
+                  <h2 className="title pt-16 pb-16">{texts.title}</h2>
                   <p className="para pb-32">{texts.para}</p>
                 </div>
                 {/* mission tabs */}

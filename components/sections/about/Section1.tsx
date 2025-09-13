@@ -39,7 +39,7 @@ export default function Section1({ background }: { background: string }) {
                   <h5 className="subtitle">
                     {locale === "en" ? "Why Choose us" : "لماذا تختارنا"}
                   </h5>
-                  <h2 className="title text-anime-style-3 pt-16 pb-12 mr-20">
+                  <h2 className="title  pt-16 pb-12 mr-20">
                     {locale === "en"
                       ? "Top Reason To Trust Us with Your Smile Every Smile"
                       : "أهم الأسباب للثقة بنا من أجل ابتسامتك"}

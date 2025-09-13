@@ -41,7 +41,7 @@ export default function Section6() {
                 >
                   Testimonial
                 </h5>
-                <h2 className="title pt-16 text-anime-style-3">
+                <h2 className="title pt-16 ">
                   See Why Patients Love Us
                 </h2>
               </div>
