@@ -6,7 +6,13 @@
     Description: DentalX HTML Template
     Version: 1.0.0
 
------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  Font Face Definitions
+/*----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
 
 /************ TABLE OF CONTENTS ***************  
 
@@ -80,7 +86,9 @@
 [dir="rtl"] body {
   font-family: "Cairo", sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-display: swap;
 }
 
 a,
@@ -535,6 +543,7 @@ img {
   --vkl-weight-bold: 700;
   --vkl-weight-black: 800;
   --vkl-family-font1: "Figtree", serif;
+  --vl-fonts-figtree: "Figtree", sans-serif;
 }
 
 /*----------------------------------------*/
@@ -957,6 +966,10 @@ img {
   color: #fff;
   position: relative;
   overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
 }
 .vl-btn:hover {
   color: #fff;
@@ -975,6 +988,10 @@ img {
   border-radius: 8px;
   display: inline-block;
   position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
 }
 .vl-btn-sec:hover .vl-btn-y-1 {
   transform: translateY(-100%);
@@ -2332,6 +2349,10 @@ body {
   color: var(--vkl-text-text-3);
   line-height: 26px;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
 }
 
 a {
@@ -2349,6 +2370,10 @@ h6 {
   margin-top: 0px;
   font-weight: 600;
   line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
 }
 
 h1 {
@@ -2386,6 +2411,10 @@ p {
   font-weight: 500;
   color: var(--vl-text-body);
   line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
 }
 
 a:not([href]):not([class]),
@@ -8028,6 +8057,10 @@ textarea {
   position: relative;
   transition: 0.3s;
   padding: 24px 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
   font-weight: var(--vkl-weight-semibold);
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
@@ -8414,6 +8447,10 @@ textarea {
   display: inline-block;
   position: relative;
   transition: 0.3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
   padding: 24px 0;
   font-weight: var(--vkl-weight-semibold);
 }
@@ -8626,6 +8663,10 @@ textarea {
   display: inline-block;
   position: relative;
   transition: 0.3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
   padding: 32px 0;
   font-weight: var(--vkl-weight-semibold);
 }
