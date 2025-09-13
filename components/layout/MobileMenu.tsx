@@ -130,7 +130,7 @@ export default function MobileMenu({
           <div className="vl-offcanvas-header d-flex justify-content-between align-items-center mb-40">
             <div className="vl-offcanvas-logo">
               <Link href="/">
-                <img src="/assets/img/logo/vl-logo-1.1.png" alt="" />
+                <img src="/assets/img/logo/logo.png" alt="" />
               </Link>
             </div>
             <div className="vl-offcanvas-close">
@@ -257,67 +257,6 @@ export default function MobileMenu({
                 </li>
               </ul>
             </nav>
-          </div>
-          <div className="vl-offcanvas-info mb-40">
-            <h3 className="vl-offcanvas-sm-title">
-              {" "}
-              {locale === "en" ? "Contact Us" : "تواصل معنا"}
-            </h3>
-            <span>
-              <Link href="#">
-                <span className="ml-5">
-                  <img src="/assets/img/icons/vl-footer-icon-1.1.svg" alt="" />
-                </span>
-                +57 9954 6476
-              </Link>
-            </span>
-            <br />
-            <span>
-              <Link href="#">
-                <span className="ml-5">
-                  <img src="/assets/img/icons/vl-footer-icon-1.3.svg" alt="" />
-                </span>
-                dentistsolution@com
-              </Link>
-            </span>
-            <br />
-            <span>
-              <Link href="#">
-                <span className="ml-5">
-                  <img src="/assets/img/icons/vl-footer-icon-1.2.svg" alt="" />
-                </span>
-                421 Allen, Mexico 4233
-              </Link>
-            </span>
-          </div>
-          <div className="vl-offcanvas-social mb-40">
-            <h3 className="vl-offcanvas-sm-title">
-              {locale === "en" ? "Follow Us" : "تابعنا"}
-            </h3>
-            <div className={`vl-footer-social ${offcanvas_social}`}>
-              <ul>
-                <li>
-                  <Link href="#">
-                    <i className="fa-brands fa-facebook-f" />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <i className="fa-brands fa-linkedin-in" />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <i className="fa-brands fa-instagram" />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <i className="fa-brands fa-youtube" />
-                  </Link>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
