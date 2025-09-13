@@ -117,6 +117,10 @@
   font-family: "Cairo", sans-serif !important;
 }
 
+[dir="rtl"] .vl-offcanvas-menu ul li a {
+  font-family: "Cairo", sans-serif !important;
+}
+
 [dir="rtl"] .vl-btn {
   font-family: "Cairo", sans-serif !important;
 }
@@ -8910,14 +8914,24 @@ textarea {
 .vl-offcanvas-menu ul li a {
   padding: 8px 0;
   display: block;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: var(--vkl-weight-semibold);
+  font-family: var(--vl-fonts-figtree);
+  color: #1b1b1b;
+  transition: 0.3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
 }
 .vl-offcanvas-menu ul li a span {
   display: none;
 }
 .vl-offcanvas-menu ul li > a {
-  color: var(--vkl-text-text-1);
+  color: white;
+}
+.vl-offcanvas-menu ul li:hover > a {
+  color: var(--vkl-text-theme-color-1);
 }
 .vl-offcanvas-menu ul li.active > a {
   color: var(--vkl-text-theme-color-1);

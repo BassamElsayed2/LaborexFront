@@ -100,7 +100,7 @@ export default function Section1({
                     >
                       {locale === "en" ? "Learn more" : "المزيد"}
                       <span>
-                        <i className="fa-regular fa-arrow-right" />
+                        <span>→</span>
                       </span>
                     </Link>
                   </div>
@@ -122,11 +122,7 @@ export default function Section1({
                       className="page-link"
                       onClick={() => handlePageChange(currentPage - 1)}
                     >
-                      {locale === "en" ? (
-                        <i className="fa-regular fa-angle-left" />
-                      ) : (
-                        <i className="fa-regular fa-angle-right" />
-                      )}
+                      {locale === "en" ? <span>‹</span> : <span>›</span>}
                     </button>
                   </li>
                   {Array.from({ length: totalPages }, (_, i) => (
@@ -153,11 +149,7 @@ export default function Section1({
                       className="page-link mr-10"
                       onClick={() => handlePageChange(currentPage + 1)}
                     >
-                      {locale === "en" ? (
-                        <i className="fa-regular fa-angle-right" />
-                      ) : (
-                        <i className="fa-regular fa-angle-left" />
-                      )}
+                      {locale === "en" ? <span>›</span> : <span>‹</span>}
                     </button>
                   </li>
                 </ul>

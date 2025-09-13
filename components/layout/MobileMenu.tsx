@@ -138,7 +138,7 @@ export default function MobileMenu({
                 className="vl-offcanvas-close-toggle"
                 onClick={handleMobileMenu}
               >
-                <i className="fal fa-times" />
+                <span>×</span>
               </button>
             </div>
           </div>
@@ -165,12 +165,15 @@ export default function MobileMenu({
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" onClick={() => handleAccordion(4)}>
-                    {locale === "en" ? "Blog" : "المقالات"}
+                  <Link href="/order">
+                    {locale === "en" ? "Order Now" : "اطلب الان"}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact">
+                  <Link href="/work">{locale === "en" ? "Jobs" : "وظائف"}</Link>
+                </li>
+                <li>
+                  <Link href="/#contact">
                     {" "}
                     {locale === "en" ? "Contact" : "تواصل"}
                   </Link>

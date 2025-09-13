@@ -1,6 +1,5 @@
 import "/public/assets/css/plugins/bootstrap.min.css";
 import "/public/assets/css/plugins/aos.css";
-import "/public/assets/css/plugins/all.css";
 import "/public/assets/css/plugins/nice-select.css";
 import "/public/assets/css/plugins/barfiller.css";
 import "/public/assets/css/style.css";
@@ -49,6 +48,15 @@ export default async function RootLayout(props: LayoutProps) {
 
   return (
     <html lang={locale} dir={direction}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+      </head>
       <body className={cairo.className}>
         <QueryProvider>
           <NextIntlClientProvider locale={locale} messages={messages}>
