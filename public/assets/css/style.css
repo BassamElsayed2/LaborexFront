@@ -85,10 +85,6 @@
 *----------------------------------------*/
 [dir="rtl"] body {
   font-family: "Cairo", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-display: swap;
 }
 
 /* Arabic text specific rules */
@@ -127,16 +123,6 @@
 
 [dir="rtl"] .vl-btn-sec {
   font-family: "Cairo", sans-serif !important;
-}
-
-/* Additional Arabic text rules for all elements */
-[dir="rtl"] * {
-  font-family: "Cairo", sans-serif !important;
-}
-
-/* Override for specific elements that should use Figtree in English */
-[dir="ltr"] * {
-  font-family: var(--vl-fonts-figtree) !important;
 }
 
 a,
@@ -9666,6 +9652,7 @@ textarea {
   (max-width: 575px) {
   .vl-cta-content {
     padding: 30px;
+    display: flex;
   }
 }
 .vl-cta-content .title {
